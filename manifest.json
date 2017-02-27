@@ -1,0 +1,11 @@
+{
+"name": "Momentum II app",
+"description": "A version of the Momentum app for Chrome",
+"version": "0.0.0.1",
+"manifest_version": 2,
+"icons": {
+},
+"browser_action": {
+"default_popup": :home.html"
+}
+}
