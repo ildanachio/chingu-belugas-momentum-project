@@ -6,6 +6,6 @@
 "icons": {
 },
 "chrome_url_overrides": {
-"newtab": "menu.html"
+"newtab": "index.html"
 }
 }
