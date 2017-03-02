@@ -1,72 +1,28 @@
 var cityName = document.getElementById("city");
-
 var displayPort = document.getElementById("display");
-var lat;
-var long;
+weatherModule();
 
-function setLatLong(lt,ln){
-    lat = lt;
-    long = ln;
-    console.log("setLatLon scope: ",lat,long);
-    getWeather(lat,long);
-}
-
-function getWeather(){
-    console.log("getWeather scope: ",lat,long);
-}
-
-
-if (navigator.geolocation) {
-  /* geolocation is available */
-  navigator.geolocation.getCurrentPosition(function(position) {
-  setLatLong(position.coords.latitude, position.coords.longitude);
-    //this will return correct values - 
-  console.log("global scope: ",lat,long);
-});
-} else {
-   console.log("Error");
-}
-
- //This will return undefined - console.log("global",lat,long);
-// cannot call getWeather(lat,long) coz lat long are undefined.
-
-
-
-/*
-
-//Submit Button
-document.getElementById('sButton').onclick = function(e) {
-    if (cityName.value != "") {
-        displayPort.textContent = "Loading.."
-        var city = cityName.value;
-        //callback function
-        getWeather(city, function(data) { //I called the callback here so that we don't pollute the getweather function with too much vars and stuff.
-            var tempC = Math.ceil(data.current.temp_c);
-            var iconSource = 'https:' + data.current.condition.icon;
-            console.log(iconSource);
-            displayPort.textContent = "Temperature: " + tempC + "°C";
-        });
+function weatherModule() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition,errorCallback,{timeout:10000});
     } else {
-        displayPort.textContent = "Enter valid city name";
+        displayPort.textContent = "Please allow sharing";
     }
-};
-
-function getLocation(){
-if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(function(position) {
-      lat = (position.coords.latitude);
-      long = (position.coords.longitude);
-     
-  });
-} else{
-    console.log("Error");
 }
+
+function errorCallback(event){
+    console.log("This is error handler working...Yay");
+    console.log(event);
+    displayPort.textContent = event.message;
 }
-getLocation();
- console.log(lat,long);
 
-
-//Button behaviour
+function showPosition(position) {
+    var latitude  = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    //displayPort.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
+    getWeather(latitude,longitude);
+   
+}
 
 //Get Weather function
 function getWeather(lat,long) {
@@ -81,4 +37,16 @@ function getWeather(lat,long) {
     xhr.send(null);
 }
 
-*/
+function displayWeather(data,lat,long){
+    var tempC = Math.ceil(data.current.temp_c) + "°C";
+    var iconSource = 'https:' + data.current.condition.icon;
+    displayPort.textContent = "";
+    var arr = [tempC,lat,long,iconSource];
+    arr.forEach(function(item) {
+        displayPort.innerHTML += '<li>' + item + '</li>'
+    });
+    displayPort.innerHTML += '<img src="'+iconSource+'"></img>'
+    console.log("hello");
+    }
+    
+    //"Temperature: " + tempC + "°C " + iconSource;
