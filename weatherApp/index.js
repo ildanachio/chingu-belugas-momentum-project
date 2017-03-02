@@ -1,8 +1,8 @@
 var weatherElement = document.getElementById("weather");
 //var weatherIcon  = document.getElementById("image");
 var fahren = false;
-
 weatherModule();
+setInterval(weatherModule,1800000); 
 
 //Weather Module
 function weatherModule() {
@@ -55,7 +55,6 @@ function displayWeather(data,lat,long){
     var iconSource = 'https:' + data.current.condition.icon;
     weatherElement.textContent =  temp;
     document.getElementById("image").src=iconSource;//see this
-    console.log("hello");
 }
  
  
