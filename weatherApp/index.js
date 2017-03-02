@@ -1,5 +1,5 @@
-var displayPort = document.getElementById("display");
 var weatherElement = document.getElementById("weather");
+var weatherIcon  = document.getElementById("image");
 var fahren = false;
 
 weatherModule();
@@ -51,14 +51,10 @@ function displayWeather(data,lat,long){
     else{
         temp = Math.ceil(data.current.temp_c) + "°C";
     }
+    
     var iconSource = 'https:' + data.current.condition.icon;
-    displayPort.textContent = "";
-    var cityName = data.location.name;
-    var arr = [temp,iconSource];
-    arr.forEach(function(item) { //there's only 1 item to display here - temp
-        displayPort.innerHTML += '<li>' + item + '</li>'
-    });
-    displayPort.innerHTML += '<img src="'+iconSource+'"></img>'
+    weatherElement.textContent = temp;
+    weatherIcon.innerHTML  =  '<img src="'+iconSource+'"></img>';
     console.log("hello");
 }
  
