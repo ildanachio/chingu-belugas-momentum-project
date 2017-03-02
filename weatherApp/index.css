@@ -1,4 +1,44 @@
 body {
     background-color: gray;
-    
+    font-family: 'Quicksand', sans-serif; 
+}
+
+#styleThis{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#weather{
+    text-align: center; 
+    font-weight:bold;
+    padding-top: 0;
+    display:block
+}
+
+#image{
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+}
+/*
+ margin-left: auto;
+    margin-right: auto;
+
+
+#styleThis{
+    padding-top: 5%;
+}
+
+#image{
+    margin: 0 0 0 47%;
+}
+
+#weather{
+    margin: 0 0 0 48%;
 }

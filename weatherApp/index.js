@@ -1,5 +1,5 @@
 var weatherElement = document.getElementById("weather");
-var weatherIcon  = document.getElementById("image");
+//var weatherIcon  = document.getElementById("image");
 var fahren = false;
 
 weatherModule();
@@ -53,8 +53,8 @@ function displayWeather(data,lat,long){
     }
     
     var iconSource = 'https:' + data.current.condition.icon;
-    weatherElement.textContent = temp;
-    weatherIcon.innerHTML  =  '<img src="'+iconSource+'"></img>';
+    weatherElement.textContent =  temp;
+    document.getElementById("image").src=iconSource;//see this
     console.log("hello");
 }
  
