@@ -9,15 +9,15 @@ function weatherModule() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition,errorCallback,{timeout:10000});
     } else {
-        displayPort.textContent = "Please allow sharing";
+        weatherElement.textContent = "Please allow sharing";
     }
 }
 
 //Handle Error
 function errorCallback(event){
-    console.log("This is error handler working...Yay");
+    console.log("This is error handler");
     console.log(event);
-    displayPort.textContent = event.message;
+    weatherElement.textContent = "error acquiring position";
 }
 
 //Get Location

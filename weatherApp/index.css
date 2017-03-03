@@ -1,5 +1,5 @@
 body {
-    background-color: gray;
+    background-color: #383043;
     font-family: 'Quicksand', sans-serif; 
 }
 
@@ -18,27 +18,12 @@ body {
     text-align: center; 
     font-weight:bold;
     padding-top: 0;
-    display:block
+    display:block;
+    color: #D1D2D3;
 }
 
 #image{
     display: block;
     margin-left: auto;
   margin-right: auto;
-}
-/*
- margin-left: auto;
-    margin-right: auto;
-
-
-#styleThis{
-    padding-top: 5%;
-}
-
-#image{
-    margin: 0 0 0 47%;
-}
-
-#weather{
-    margin: 0 0 0 48%;
 }
