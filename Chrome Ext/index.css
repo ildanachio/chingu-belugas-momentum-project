@@ -1,29 +1,132 @@
-body {
-    background-color: #383043;
-    font-family: 'Quicksand', sans-serif; 
+body,
+html {
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px auto;
 }
 
-#styleThis{
-    width: 100px;
+.bgImage {
+    background-size: cover;
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+    background: url('https://source.unsplash.com/random') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#parentdiv {
+    content: " ";
+    display: block;
+    clear: both;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    margin: 0px auto;
+    padding: 0px auto;
+    font-weight: normal;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#styleThis {
+    width: 200px;
     height: 100px;
     position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
+    top: 0;
+    bottom: 40;
+    left: 40;
     right: 0;
     margin: auto;
+    display: inline-block;
+    padding-right: 3%;
 }
 
-#weather{
-    text-align: center; 
-    font-weight:bold;
-    padding-top: 0;
-    display:block;
+#weather {
+    text-align: center;
+    padding-top: 5%;
+    display: inline-block;
+    color: #D1D2D3;
+    font-size: 3em;
+}
+
+#city {
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    color: #D1D2D3;
+    text-transform: uppercase;
+    margin-top: -15%;
+    padding-right: 20px;
+}
+
+#image {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    padding-bottom: 35px;
+}
+
+#date {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 40;
+    left: 0;
+    right: 30;
+    margin: auto;
+    padding-top: 2%;
+    padding-left: 3%;
+    color: #D1D2D3;
+    font-size: 1.5em;
+}
+
+#status {
+    width: 97%;
+    height: 100px;
+    position: absolute;
+    overflow: hidden;
+    top: 40;
+    bottom: 0;
+    left: 0;
+    right: 30;
+    margin: auto;
+    padding-top: 4%;
+    padding-left: 3%;
     color: #D1D2D3;
 }
 
-#image{
-    display: block;
-    margin-left: auto;
-  margin-right: auto;
+#description {
+    text-transform: capitalize;
+}
+
+#settingsBtn {
+    position: absolute;
+    overflow: hidden;
+    top: 30;
+    bottom: 0;
+    left: 30;
+    right: 0;
+    margin: auto;
+    padding-bottom: 5em;
+}
+
+#settings {
+    width: 50%;
+    float: right;
+    text-align: center;
+    padding: 0;
+    color: #D1D2D3;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 20em;
+}
+
+.userSettings {
+    cursor: pointer;
+    cursor: hand;
 }
