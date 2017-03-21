@@ -1,11 +1,14 @@
 {
-"name": "Momentum II app",
-"description": "A version of the Momentum app for Chrome",
-"version": "0.0.0.1",
-"manifest_version": 2,
-"icons": {
-},
-"chrome_url_overrides": {
-"newtab": "menu.html"
-}
-}
+  "name": "WebTao",
+  "description": "A version of the Momentum app for Chrome",
+  "version": "0.0.0.1",
+  "manifest_version": 2,
+  "browser_action": {
+   "default_icon": "karate_kick.png",
+   "default_popup": "dojo.html",
+   "default_title": "Flying Roundhouse Klick here to enter the Dojo"
+  },
+  "chrome_url_overrides": {
+  "newtab": "index.html"
+  }
+  }
