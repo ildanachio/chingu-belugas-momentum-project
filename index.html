@@ -1,10 +1,43 @@
+<!DOCTYPE html>
+<html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="todo.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>semrush API</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="todo.js" src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-<div id="myDIV" class="header">
+   <!-- Start Random Quotes -->
+  <div class="container-fluid backgroundColorChange">
+  	<!-- <div class="row headerArea">
+  		<div class="col-xs-8 col-md-8 col-md-offset-2 col-xs-offset 2">
+        <div class = "heading"><h1>Random Chuck Norris Joke Machine</h1></div>
+  		</div>
+  	</div> -->
+  	<div class="row contentArea">
+  		<div class="textColorChange col-xs-8 col-md-8 col-md-offset-2 col-xs-offset 2 test">
+  			<p class = "jokeArea"></p>
+  			<div class="buttons">
+  			<img src="http://res.cloudinary.com/dx2najekz/image/upload/v1486125449/twitter_vvpuy2.png" class="backgroundColorChange img-responsive twitter-share-button" </a>
+  			<button onclick="getQuote()" class="backgroundColorChange" id="newJoke">Make me laugh</button>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+  <!-- END Random Quotes -->
+    <!-- Start TODO list -->
+  <div id="myDIV" class="header">
   <h2>Do, or Do Not</h2>
   <input type="text" id="myInput" placeholder="Add your item then click DO........then get it DONE, or not">
   <span onclick="newElement()" class="addBtn">DO</span>
@@ -12,5 +45,13 @@
 
 <ul id="myUL">
 </ul>
+  <!-- End TODO list -->
+  
+  <!-- DOM Utility functions -->
+  <script src="https://rawgit.com/jesstelford/a981e6877034231bd43b526a07b3a7b4/raw/js1-utilities.js"></script>
+  <!-- Our code -->
+  <script src="main.js"></script>
 
 </body>
+</html>
+

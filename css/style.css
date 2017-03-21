@@ -1,0 +1,50 @@
+
+.textColorChange{
+}
+
+.backgroundColorChange{
+}
+body{
+  font-size: 16px;
+}
+.test{
+  background-color: white !important ;
+}
+.jokeArea{
+	text-align:center;
+  border-radius: 2px;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  padding: 3%;
+}
+.contentArea{
+  padding-top:15%;
+}
+.quote{
+  font-size: 3.5em;
+}
+.container-fluid{
+  height: 750px;
+}
+#newJoke{
+  font-size: 1.2em;
+  color: white;
+  border-radius: 8px;
+  float:right;
+  margin-right: 5%;
+  border: none;
+  padding: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.twitter-share-button{
+  float:left;
+  width:15%;
+  margin-left:5%;
+  padding-bottom:1%;
+  margin-bottom:1%
+}
+.buttons{
+  padding: .5%;
+  background-color: white;
+}
