@@ -1,9 +1,17 @@
-#box {
-    width: 60%
+input{
+	padding:1%;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	outline:none;
+	text-align:center;
 }
 
-#view {
-    margin-top: 4em;
-    text-align: center;
-    font-size: 3em
+input:focus::-webkit-input-placeholder 
+{
+    color: transparent;
+}
+
+body{
+	text-align: center;
 }
