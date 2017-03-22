@@ -7,8 +7,9 @@ var cross = document.getElementById("cross"); //cross icon to cancel/delete the 
 inputDiv.style.display = 'none'; //initially hide input div
 taskDiv.style.display ='none'; //initially hide task display div
 //if(localStorage['task'] !== null) dayTasks.push(localStorage['task']);
+var checkBox = document.getElementById("check");
 
-if(localStorage['task'] == null){
+if(!localStorage['task']){
     taskDiv.style.display ='none'; 
     inputDiv.style.display = 'block';
     dayTask.addEventListener('keydown', dayFocus);
@@ -30,19 +31,40 @@ function dayFocus(e){
 }
 
 function displayTask(){
-        task.innerHTML = 'TODAY <br><input type="checkbox" name="dayTask" class="css-checkbox" />'+localStorage.getItem('task');
+        task.innerHTML = localStorage.getItem('task');
+        if(localStorage.textStyle){
+          task.style.textDecoration = localStorage.getItem('textStyle');
+        }
+        if(localStorage.chekbox){
+            checkBox.checked = (localStorage.getItem('checkbox') == 'true');
+        } 
         taskDiv.style.display = 'inline';
+        
+        checkBox.addEventListener('click', function(){
+          if(task.style.textDecoration === 'line-through'){
+               task.style.textDecoration = 'none';
+               checkBox.checked == false;
+               localStorage.setItem('checkbox','false');
+               localStorage.setItem('textStyle','none');
+          }
+          else{
+              task.style.textDecoration = 'line-through';
+              checkBox.checked == true;
+              localStorage.setItem('checkbox','true');
+              localStorage.setItem('textStyle','line-through');
+          }
+        });
+        
         cross.addEventListener('click', deleteTask);
+
 }
 
 function deleteTask(){
-   // dayTasks = dayTasks.pop();
-    //if(dayTasks.length !== 0) localStorage.setItem('task',dayTasks[dayTasks.length -1]);
-   // else {
+   
      taskDiv.style.display = 'none';
-      localStorage.setItem('task',null); 
-      
-   // }
+      localStorage.removeItem('task');
+      localStorage.removeItem('checkbox');
+      localStorage.removeItem('textStyle');
     dayTask.value = '';
     inputDiv.style.display='block';
     dayTask.addEventListener('keydown', dayFocus);
