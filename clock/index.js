@@ -1,18 +1,23 @@
+//localStorage.clear();
 var getUserName = document.getElementById("getName");
 getUserName.classList.remove("hidden");
-var userName = '';
+var userName = localStorage.getItem("name");
 
 clock();
 setInterval(clock, 1000);
 
-//get username
-document.getElementById("getName").addEventListener("change", function() {
-    userName = getUserName.value;
+//get username and store it iff username is not already present
+if (userName === null) {
+    document.getElementById("getName").addEventListener("change", function() {
+        userName = getUserName.value;
+        getUserName.classList.add("hidden");
+        storeUserData(userName)
+        clock()
+    })
+} else{
     getUserName.classList.add("hidden");
     clock()
-})
-
-console.log(userName)
+}
 
 //The clock function
 function clock() {
@@ -46,4 +51,9 @@ function greetUser(phase) {
         document.getElementById("showname").textContent = "Good " + phase + ' ' + userName;
     }
     return 1;
+}
+
+//store user data
+function storeUserData(username) {
+    localStorage.setItem("name", username);
 }
