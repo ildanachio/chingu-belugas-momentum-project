@@ -12,17 +12,13 @@ input:focus::-webkit-input-placeholder
     color: transparent;
 }
 
-body{
-	text-align: center;
+.dayTask-container{
+	position: absolute;
+	width:100%;
+	bottom : 10%;
 }
 
-.container{
-	width:auto;
-	height:auto;
-	top:60%;
-}
-
-#taskDiv, #inputDiv{
+#taskDiv, #inputDiv, #title{
 	line-height: 2em;
 	font-size: 1.5em;
 	padding-top: 3%; 
