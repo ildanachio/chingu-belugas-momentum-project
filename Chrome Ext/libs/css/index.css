@@ -1,0 +1,39 @@
+body {}
+
+#header {
+    margin-bottom: 10px;
+}
+
+/*textarea {
+    resize: none;
+    border: none;
+    border-right: 1px solid gray;
+}*/
+
+.panels {
+    float: left;
+    width: 100%;
+    border: none;
+    background-color:#EEEEEE;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 5px 5px 15px ;
+    height: 90vh;
+
+}
+
+iframe {
+    border: none;
+    border-left: 1px solid gray;
+}
+
+.color{
+    background-color: #F5F5F5;
+}
+
+
+/*.hidden {
+    display: none;
+}
+*/
