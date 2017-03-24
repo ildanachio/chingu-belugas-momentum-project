@@ -163,3 +163,21 @@ input {
     background-color: #bbb;
 }
 /* End CSS for TODO list */
+
+/* Start CSS for Code Challenges */
+#kataAuthor {
+  margin-left: 75%; 
+}
+
+#kata-container {
+  width: 60%;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  padding: 50px;
+}
+#getKata {
+  margin-top: 20px;
+}
+/* END CSS for Code Challenges */
