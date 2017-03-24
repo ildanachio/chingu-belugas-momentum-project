@@ -1,52 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>webTaoEditor</title>
-    <script src="libs/js/jquery.js"></script>
-    <link rel="stylesheet" href="libs/css/bootstrap.css">
-    <link rel="stylesheet" href="libs/css/index.css">
+    <style type="text/css">
+    body {width:800; height:600;}
+    </style>
 </head>
-
 <body>
-    <div class='container-fluid'>
-        <div id='header' class='well well-sm'>
-            <div class="btn-group btn-group-justified">
-                <div class="btn-group">
-                    <button id='htmlBtn' type="button" class="btn">HTML</button>
-                </div>
-                <div class="btn-group">
-                    <button id='cssBtn' type="button" class="btn">CSS</button>
-                </div>
-                <div class="btn-group">
-                    <button id='jsBtn' type="button" class="btn">Javascript</button>
-                </div>
-                <div class="btn-group">
-                    <button id='runBtn' type="button color" class="btn">Run</button>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div id="bodyContainer" class="row">
-                <div class="col-xs-3 col-xs-6 containers" id='htmlContainer'>
-                    <textarea id="htmlPanel" class="panels"><span> Hello Belugas </span></textarea>
-                </div>
-                <div class="col-xs-3 containers" id='cssContainer'>
-                    <textarea id="cssPanel" class="panels">span{color: green; font-weight:bold;}</textarea>
-                </div>
-                <div class="col-xs-3 containers" id='jsContainer'>
-                    <textarea id="jsPanel" class="panels">//alert('Hello Belugas')</textarea>
-                </div>
-                <div class="col-xs-3 containers" id='opContainer'>
-                <iframe id="outputPanel" class="panels"></iframe>
-            </div>
-            </div>
-
-        </div>
-    </div>
-    <script src="libs/js/index.js"></script>
-
+    <iframe src="https://jsfiddle.net/" width="100%" height="100%" frameborder="0">
+    </iframe>
 </body>
-
 </html>
