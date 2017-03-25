@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://use.fontawesome.com/9acb8c974f.js"></script>
+
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container dayTask-container text-center">
+
+        <div id = "inputDiv">
+            <label for="dayTask"> What is your main focus for today? </label><br>
+            <input id="dayTask" type="text" placeholder="Enter your task here" />
+        </div>
+       <div id="taskDiv">
+          <span id="title"> TODAY</span> <br> 
+           <input type="checkbox" name="dayTask" class="css-checkbox" id="check" />
+        <span id="task"></span><i class="fa fa-times" aria-hidden="true" id="cross"></i><i class="fa fa-plus" aria-hidden="true" id="plus"></i>
+
+       </div>
+    </div>
+    <script src='index.js'></script>
+</body>
+
+</html>
