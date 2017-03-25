@@ -3,14 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+<!-- Start Random Quotes -->
+    
   <title>semrush API</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  
-    <script type="text/javascript" src="todo.js" ></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
-    
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
   <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -19,11 +18,50 @@
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
-</head>
+    
+<!-- END Random Quotes --> 
+<!-- Start TODOlist  --> 
+    
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="./style.css"/>
+    
+<!-- END TODOlist  --> 
+<!-- Start WeatherApp  --> 
+    
+ <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
+    
+<!-- END WeatherApp  -->
+<!-- Start Clock  --> 
+    
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+<!-- END Clock --> 
+<!-- Start algoChallenges -->
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script type="text/javascript" src="kata.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+    
+  <!-- END algoChallenges -->  
+    
+    </head>
     
 <body>
     
-   <!-- Start Random Quotes -->
+<!-- Start Random Quotes -->
+    
   <div class="container-fluid backgroundColorChange">
   	<!-- <div class="row headerArea">
   		<div class="col-xs-8 col-md-8 col-md-offset-2 col-xs-offset 2">
@@ -40,24 +78,80 @@
   		</div>
   	</div>
   </div>
-  <!-- END Random Quotes -->
-    
-    <!-- Start TODO list -->
-  <div id="myDIV" class="header">
-  <h2>Do, or Do Not</h2>
-  <input type="text" id="myInput" placeholder="Add your item then click DO........then get it DONE, or not">
-  <span onclick="newElement()" class="addBtn">DO</span>
-</div>
-
-<ul id="myUL">
-</ul>
-  <!-- End TODO list -->
-  
-  <!-- DOM Utility functions -->
+  <!-- DOM Utility functions -->    
   <script src="https://rawgit.com/jesstelford/a981e6877034231bd43b526a07b3a7b4/raw/js1-utilities.js"></script>
   <!-- Our code -->
-  <script src="main.js"></script>
+  <script src="quotes.js"></script> 
+    
+<!-- END Random Quotes -->
+<!-- Start TODO list -->
+    
+    <div id="myDIV" class="header">
+    <h2>Do, or Do Not</h2>
 
+        <input id="task" placeholder="Add your item"><button id="add" class="addBtn" >DO</button>
+        <hr>
+    </div>
+    <ul id="todos" style="margin: 20px;"></ul>
+ 
+    <script src="todo.js"></script>
+    
+<!-- END TODO list -->
+<!-- Start WeatherApp  -->  
+    
+   <div id = "styleThis"> 
+        <img id="image" src="./loadinfo2.gif"></img>
+        <span id='weather'>loading</span>
+    </div>
+    
+    
+    <script src="./weatherApp.js"></script> 
+    
+<!-- END WeatherApp -->
+<!-- Start Clock -->
+    
+    <div id="box" class="container-fluid">
+        <div id="view" class="jumbotron">23.19</div>
+        <div id="greets">
+            <input id="getName" type="text" class="form-control hidden" placeholder="Hello, What is your name?">
+            <div id="showname" class="well well-sm hidden"></div>
+        </div>
+    </div>
+    <script src='clock.js'></script>    
+    
+<!-- END Clcok -->
+<!-- Start algoChallenges -->
+    
+<div class="container-fluid">
+ <nav class="navbar navbar-fixed-top navbar-header" style="background-color: #FF945A;">
+  <div class = "row text-center">
+    <h1>CodeWars API</h1>
+    </nav>
+  </div> 
+  <div id="kata-container">
+  <div class = "row text-center">
+    <h2 id="kataHolder"> Your Code Challenge Will Appear Here</h2>
+  <br>
+      <h3 id="kataAuthor"></h3>
+ 
+    <div class = "centre">Select difficulty  
+      <levelgroup>
+    <label><input type="radio" name="level" id="easy"> Easy</label>
+    <label><input type="radio" name="level" id="medium"> Medium</label>
+    <label><input type="radio" name="level"id="hard"> Hard</label>
+      </levelgroup>
+ <button id = "getKata" class = "btn btn-primary btn-lg">
+        Get Challenge
+      </button>
+   
+      </div>
+  </div>
+  </div>    
+    
+<!-- END algoChallenges -->
+   
+    
+  
 </body>
 </html>
 
