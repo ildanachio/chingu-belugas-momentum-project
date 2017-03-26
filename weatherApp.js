@@ -51,7 +51,6 @@ function displayWeather(data,lat,long){
     else{
         temp = Math.ceil(data.current.temp_c) + "°C";
     }
-    console.log(data)
     var iconSource = 'https:' + data.current.condition.icon;
 
     weatherElement.textContent =  temp;

@@ -11,8 +11,8 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
 </head>
 
@@ -46,7 +46,23 @@
                 </div>
             </div>
             <script src='clock.js'></script>
-            <!-- END Clock -->
+        <!-- END Clock -->
+
+        <!-- START Focus of the Day -->
+        <div class="dayTaskContainer">
+            <div id="inputDiv">
+                <div id="label">What is your main focus for today?</div>
+                <input id="dayTask" type="text" placeholder="Enter your task here" />
+            </div>
+            <div id="taskDiv">
+                <span id="title"> TODAY</span>
+                <br>
+                <input type="checkbox" name="dayTask" class="css-checkbox" id="check" />
+                <span id="task"></span><i class="fa fa-times" aria-hidden="true" id="cross"></i><i class="fa fa-plus" aria-hidden="true" id="plus"></i>
+            </div>
+        </div>
+        <script src='focus.js'></script>
+        <!-- END Focus of the Day -->
 
 
 

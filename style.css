@@ -22,10 +22,6 @@
     width: 60%;
 }
 
-#greets{
-
-}
-
 #viewBox{
     padding-top: 15vh;
     text-align: center;
@@ -40,15 +36,36 @@
     box-sizing: border-box;
     font-size: 5vmin;
     border: none;
+    outline: none;
     border-bottom: 1px solid black;
 }
 
 #showname{
     width: 100%;
     text-align: center;
+    margin-top: -4vmin;
     padding: 12px 20px;
     box-sizing: border-box;
     font-size: 5vmin;
+    outline: none;
     border: none;
 }
 
+/*Focus of the day style*/
+#label{
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 5vmin;
+}
+
+#dayTask{
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-size: 4vmin;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}

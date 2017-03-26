@@ -22,13 +22,20 @@ if (userName === null) {
 //The clock function
 function clock() {
     var dateTime = new Date();
-    var Hour = dateTime.getHours()
+    if(dateTime.getHours() > 12){
+        var Hour = dateTime.getHours() - 12;
+    } else {
+        var Hour = dateTime.getHours();
+    }
 
+    console.log(Hour)
+
+    var Minutes = dateTime.getMinutes();
     //console.log(currentHour,dateTime.getMinutes(), dateTime.getSeconds());
-    if(Hour < 10){
-        document.getElementById("view").textContent = dateTime.getHours() + ":" + '0'+ dateTime.getMinutes();
+    if( Minutes < 10){
+        document.getElementById("view").textContent = Hour + ":" + '0'+ dateTime.getMinutes();
     }else{
-        document.getElementById("view").textContent = dateTime.getHours() + ":" + dateTime.getMinutes();
+        document.getElementById("view").textContent = Hour + ":" + dateTime.getMinutes();
     }
 
     var Phase = dayPhase(Hour);
