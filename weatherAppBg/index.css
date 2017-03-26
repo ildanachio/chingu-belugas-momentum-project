@@ -1,7 +1,7 @@
 /* Start CSS for Random Quotes */
 .random-quote{
      position: fixed;
-    width:55%;
+    width:65%;
     left: 20%;
    
     bottom:0;
@@ -223,7 +223,7 @@ input[type=checkbox] , #cross, #plus{
 
 .to-do-app{
   position: absolute;
-  width: 30%;
+  width: 25%;
   right:0;
   bottom:0;
 }
@@ -240,6 +240,7 @@ input[type=checkbox] , #cross, #plus{
 ul {
     margin: 0;
     padding: 0;
+    
 }
 
 /* Style the list items */
@@ -256,6 +257,7 @@ ul li {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
@@ -284,7 +286,6 @@ ul li:hover {
 /* Style the header */
 .header {
     color: white;
-    text-align: center;
 }
 
 /* Clear floats after the header */
@@ -296,23 +297,30 @@ ul li:hover {
 
 /* Style the input */
 .to-do-app input {
-    border: none;
-    width: 75%;
+    width: 70%;
     padding: 10px;
     float: left;
     font-size: 16px;
+    color:#fff;
+    background: transparent;
+    border-top:none;
+    border-right:none;
+    border-left: none;
+    border-bottom-color: 1px solid white;
+	outline:none;
+	text-align:center;
 }
 
 /* Style the "Add" button */
 .addBtn {
-    padding: 8px;
-  margin: 0 0 0 10px;
-    width: 10%;
+    padding: 1.5%;
+    margin: 0 2%;
+    width: 12%;
     background: #d9d9d9;
     color: #555;
     float: left;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.2em;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -335,9 +343,6 @@ ul li:hover {
     font-size: smaller;
 }
 
-#task{
-    color:black;
-}
 
 #delete-div{
     display: none;
