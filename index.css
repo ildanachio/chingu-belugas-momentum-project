@@ -1,9 +1,8 @@
 /* Start CSS for Random Quotes */
 .random-quote{
-     position: fixed;
+    position: fixed;
     width:65%;
-    left: 20%;
-   
+    left: 15%;
     bottom:0;
 }
 .jokeArea{
@@ -66,6 +65,14 @@
     background: transparent;
     border:none;
     outline:none;
+    padding: 1%;
+}
+
+#getName:focus, #getName:active{
+    outline:none;
+    border-top:none;
+    border-left: none;
+    border-right: none; 
 }
 
 .hidden{
@@ -193,7 +200,7 @@ input:focus::-webkit-input-placeholder
 }
 
 .dayFocus{
-	margin-top: -2%;
+	margin-top: 0;
     color: #D1D2D3;
     font-weight: bold;
     text-align: center;
@@ -355,4 +362,36 @@ ul li:hover {
 }
 
 /* End CSS for TODO list */
+
+/* Start CSS for Algorithm challenge */
+.algo{
+   position: absolute;
+   width: 40%;
+   top:0;
+   left:0;
+}
+
+.algo h3{
+	color:#d1d2d3;
+	margin-left: 2%;
+}
+
+#kataAuthor {
+  margin-left: 75%; 
+}
+
+#kata-container {
+  width: 65%;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: 2%;
+  background-color: white;
+  padding:2%;
+}
+#getKata {
+  margin-top: 20px;
+}
+
+/* End CSS for Algorithm Challenge */
+
 
