@@ -8,7 +8,7 @@ let state = {
 }
 function stateReset(){
   state.currentQuote = ''
-  state.color = 'lawngreen'
+  //state.color = 'lawngreen'
 }
 function newColor(){
   return 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')'
@@ -26,8 +26,8 @@ function getQuote(){    fetch("http://api.icndb.com/jokes/random")
     }).then((callback)=>{
       stateReset()
       state.color = newColor()
-      applyColor(bgColor)
-      applyColor(textColor)
+      //applyColor(bgColor)
+      //applyColor(textColor)
       quoteContainer.innerHTML = '"'+callback.value.joke+'"'
       state.currentQuote = callback.value.joke
       }
