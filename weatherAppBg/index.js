@@ -1,7 +1,6 @@
 var weatherElement = document.getElementById("weather");
 //var weatherIcon  = document.getElementById("image");
 var city  = document.getElementById("city");
-var dateDiv  = document.getElementById("date");
 var description  = document.getElementById("description");
 var wind  = document.getElementById("wind");
 var humidity  = document.getElementById("humidity");
@@ -58,7 +57,6 @@ function displayWeather(data,lat,long){
         temp = Math.ceil(data.current.temp_c) + "°C";
     }
     city.innerHTML = data.location.name;
-    dateDiv.innerHTML = data.location.localtime;
     description.innerHTML = data.current.condition.text;
     wind.innerHTML = 'Wind: ' + data.current.wind_dir + ' ' + data.current.wind_mph + ' mph';
     humidity.innerHTML = 'Humidity: ' + data.current.humidity + '%';

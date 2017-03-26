@@ -23,8 +23,7 @@ if (userName === null) {
 function clock() {
     var dateTime = new Date();
     var Hour = dateTime.getHours()
-
-    //console.log(currentHour,dateTime.getMinutes(), dateTime.getSeconds());
+    //console.log(dateTime.getMinutes(), dateTime.getSeconds());
     document.getElementById("view").innerHTML = dateTime;
     var Phase = dayPhase(Hour);
     greetUser(Phase)

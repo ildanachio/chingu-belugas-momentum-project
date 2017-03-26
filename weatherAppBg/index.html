@@ -17,14 +17,40 @@
             <div id="city"></div>
         </div>
         
-        
-        <div id="date" ></div>
-        
         <div id="status" class="overlay" >
             <div id="description"></div>
             <div id="wind">Wind Speed: </div>
             <div id="humidity">Humidity:</div>
         </div>
+
+        <!-- Start Clock -->
+    
+    <div id="box" class="clock">
+        <div id="view">23.19</div>
+        <div id="greets">
+            <input id="getName" type="text" class="form-control hidden" placeholder="Hello, What is your name?">
+            <div id="showname" class="well well-sm hidden"></div>
+        </div>
+    </div>
+    <script src='clock.js'></script>    
+    
+    <!-- END Clock -->
+
+    <!-- START Focus of the Day -->
+    <div class="dayTask text-center">
+        <div id = "inputDiv">
+            <label for="dayTask"> What is your main focus for today? </label><br>
+            <input id="dayTask" type="text" placeholder="Enter your task here" />
+        </div>
+       <div id="taskDiv">
+          <span id="title"> TODAY</span> <br> 
+           <input type="checkbox" name="dayTask" class="css-checkbox" id="check" />
+        <span id="task"></span><i class="fa fa-times" aria-hidden="true" id="cross"></i><i class="fa fa-plus" aria-hidden="true" id="plus"></i>
+       </div>
+    </div>
+    <script src='focus.js'></script>
+ <!-- END Focus of the Day -->
+
     <!-- Start Random Quotes -->
     
   <div class="random-quote">

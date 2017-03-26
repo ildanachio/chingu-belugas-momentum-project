@@ -65,6 +65,7 @@
 }
 /*End Clock css */
 
+/*Weather CSS */
 body, html {
     height:  100%;
     margin:  0px auto;
@@ -145,21 +146,6 @@ padding-bottom:35px;
 
 }
 
-#date{
-    width: 200px;
-    height: 100px;
-    position: absolute;
-    top:0;
-    bottom: 40;
-    left: 0;
-    right: 30;
-    margin: auto;
-    padding-top:2%;
-    padding-left:3%;
-    color: #D1D2D3;
-    font-size:1.5em;
-}
-
 #status{
     width: 97%;
     height: 100px;
@@ -178,4 +164,45 @@ padding-bottom:35px;
 #description{
      text-transform: capitalize;
 }
+
+/* end weather css */
+
+/* focus of the day */
+input{
+	padding:1%;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	outline:none;
+	text-align:center;
+}
+
+input:focus::-webkit-input-placeholder 
+{
+    color: transparent;
+}
+
+.dayTask{
+	margin-top: -2%;
+    color: #D1D2D3;
+    font-weight: bold;
+    text-align: center;
+}
+
+#taskDiv, #inputDiv, #title{
+	line-height: 1.6em;
+	font-size: 1.5em;
+	padding-top: 2%; 
+}
+
+#task{
+	padding-right: 1%;
+	padding-left: 1%;
+}
+
+input[type=checkbox] , #cross, #plus{
+	cursor:pointer;
+}
+
+/* end focus of the day CSS */
 

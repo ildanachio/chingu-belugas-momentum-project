@@ -229,27 +229,6 @@ body {
 }
 /* End CSS for WeatherApp */
 
-/* Start CSS for Clock */
-#box {
-    width: 60%
-}
-
-#view {
-    margin-top: 4em;
-    text-align: center;
-    font-size: 3em
-}
-
-#greeting{
-    border: none;
-}
-
-#showname{
-    font-size:2em;
-    font-weight: bold;
-    text-align: center;
-    color: #333333;
-}
 
 /* END CSS for WeatherApp */
 /* START CSS for Focus of the Day */
