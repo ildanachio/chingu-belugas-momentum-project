@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>WebTao</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://use.fontawesome.com/9acb8c974f.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -22,7 +23,7 @@
         <div id='topHeader' class="row">
             <!-- topheader should contain icons for text editor, weather and most used link list -->
             <!-- Start WeatherApp  -->
-            <div id="styleThis" class="col-xs-2 text-right pull-right">
+            <div id="styleThis" class="col-xs-4 text-right pull-right">
                 <span id='weather' class="weatherFont">loading</span>
                 <span id='wCondition' class="weatherFont"></span>
                 <!-- <div class="col-xs-6"><img id="image" src="./loadinfo2.gif"></img>
@@ -54,12 +55,15 @@
                 <div id="label">What is your main focus for today?</div>
                 <input id="dayTask" type="text" placeholder="Enter your task here" />
             </div>
-            <div id="taskDiv">
+            <div class="taskBox">
+                <div id="taskDiv" >
                 <span id="title"> TODAY</span>
                 <br>
                 <input type="checkbox" name="dayTask" class="css-checkbox" id="check" />
                 <span id="task"></span><i class="fa fa-times" aria-hidden="true" id="cross"></i><i class="fa fa-plus" aria-hidden="true" id="plus"></i>
             </div>
+            </div>
+
         </div>
         <script src='focus.js'></script>
         <!-- END Focus of the Day -->
