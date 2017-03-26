@@ -60,6 +60,10 @@
     line-height: 2.3em;
 }
 
+#getName{
+    text-align: center;
+}
+
 .hidden{
     display: none;
 }
