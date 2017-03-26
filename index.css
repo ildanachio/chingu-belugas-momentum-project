@@ -373,7 +373,7 @@ ul li:hover {
 
 .algo h3{
 	color:#d1d2d3;
-	margin-left: 2%;
+	margin-left: 8%;
 }
 
 #kataAuthor {
@@ -382,10 +382,11 @@ ul li:hover {
 
 #kata-container {
   width: 65%;
-  margin-top: 50px;
+  margin-top: 5%;
   margin-right: auto;
   margin-left: 2%;
-  background-color: white;
+  background-color: transparent;
+  color:white;
   padding:2%;
 }
 #getKata {
