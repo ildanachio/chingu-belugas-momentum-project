@@ -38,7 +38,7 @@ function clock() {
         document.getElementById("view").textContent = Hour + ":" + dateTime.getMinutes();
     }
 
-    var Phase = dayPhase(Hour);
+    var Phase = dayPhase(dateTime.getHours());
     greetUser(Phase)
 
 }
