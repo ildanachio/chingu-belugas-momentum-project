@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
   $("#getKata").on("click", function(){
 //arrays created from CodeWars Javascript challenges - easy made up of kyu 1na 2, medium kyu 3 and hard kyu 4
@@ -43,4 +44,3 @@ $.getJSON(codeWarsUrl+returnName, function(data) {
   });         
   });
   });
- 

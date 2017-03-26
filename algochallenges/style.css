@@ -1,0 +1,18 @@
+#kataAuthor {
+  margin-left: 75%; 
+}
+
+#kata-container {
+  width: 60%;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  padding: 50px;
+}
+#getKata {
+  margin-top: 20px;
+}
+
+
+
