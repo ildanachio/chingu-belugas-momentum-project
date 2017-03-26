@@ -29,7 +29,7 @@ function dayFocus(e){
     dayTasks.push(dayTask.value);
     localStorage.setItem('task',dayTasks[dayTasks.length - 1]); //the latest task entered is stored in localStorage
     displayTask();
-    document.getElementById("randomQuotes").style.padding = "7.5vw 0vw 4vw 0vw";
+    document.getElementById("randomQuotes").style.padding = "7.5vw 0vw 10vw 0vw";
   };
   }
 }
@@ -77,7 +77,7 @@ function deleteTask(){
     dayTask.value = '';
     inputDiv.style.display='block';
     dayTask.addEventListener('keydown', dayFocus);
-    document.getElementById("randomQuotes").style.padding = "2vw 0vw 4vw 0vw";
+    document.getElementById("randomQuotes").style.padding = "2vw 0vw 10vw 0vw";
 
 }
 
