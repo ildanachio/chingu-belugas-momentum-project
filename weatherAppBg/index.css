@@ -34,6 +34,37 @@
 }
 /* END CSS for Random Quotes */
 
+/* Start CSS for Clock */
+#box {
+    width: 54%;
+    margin: auto;
+    font-weight: bold;
+    color: #D1D2D3;
+}
+
+#view {
+    margin-top: 4em;
+    text-align: center;
+    font-size: 2em;
+}
+
+#greeting{
+    border: none;
+    line-height: 2.3em;
+}
+
+#showname{
+    font-size:2em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.3em;
+}
+
+.hidden{
+    display: none;
+}
+/*End Clock css */
+
 body, html {
     height:  100%;
     margin:  0px auto;
