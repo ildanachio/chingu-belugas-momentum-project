@@ -1,7 +1,7 @@
 var inputDiv = document.getElementById("inputDiv");//form div
 var taskDiv = document.getElementById('taskDiv'); //task div to display entered task
 var dayTask = document.getElementById("dayTask"); //text input 
-var task = document.getElementById("task"); //task span
+var taskFocus = document.getElementById("task-focus"); //task span
 var dayTasks = []; //array to store tasks 
 var cross = document.getElementById("cross"); //cross icon to cancel/delete the task
 var plus = document.getElementById("plus"); //cross icon to cancel/delete the task
@@ -33,9 +33,9 @@ function dayFocus(e){
 }
 
 function displayTask(){
-        task.innerHTML = localStorage.getItem('task');
+        taskFocus.innerHTML = localStorage.getItem('task');
         if(localStorage['textStyle']){
-          task.style.textDecoration = localStorage.getItem('textStyle');
+          taskFocus.style.textDecoration = localStorage.getItem('textStyle');
         }
         if(localStorage['checkbox']){
             checkBox.checked = (localStorage.getItem('checkbox')) == 'true';
@@ -44,15 +44,15 @@ function displayTask(){
         taskDiv.style.display = 'inline';
         
         checkBox.addEventListener('click', function(){
-          if(task.style.textDecoration === 'line-through'){
-               task.style.textDecoration = 'none';
+          if(taskFocus.style.textDecoration === 'line-through'){
+               taskFocus.style.textDecoration = 'none';
                checkBox.checked == false;
                localStorage.setItem('checkbox','false');
                localStorage.setItem('textStyle','none');
                testCheck();
           }
           else{
-              task.style.textDecoration = 'line-through';
+              taskFocus.style.textDecoration = 'line-through';
               checkBox.checked == true;
               localStorage.setItem('checkbox','true');
               localStorage.setItem('textStyle','line-through');
@@ -69,7 +69,7 @@ function deleteTask(){
       localStorage.removeItem('checkbox');
       localStorage.removeItem('textStyle');
      taskDiv.style.display = 'none';
-     task.style.textDecoration = 'none';
+     taskFocus.style.textDecoration = 'none';
     checkBox.checked = false; 
     testCheck();
     dayTask.value = '';

@@ -45,7 +45,7 @@
     <!-- END Clock -->
 
     <!-- START Focus of the Day -->
-    <div class="dayTask text-center">
+    <div class="dayFocus text-center">
         <div id = "inputDiv">
             <label for="dayTask"> What is your main focus for today? </label><br>
             <input id="dayTask" type="text" placeholder="Enter your task here" />
@@ -53,7 +53,7 @@
        <div id="taskDiv">
           <span id="title"> TODAY</span> <br> 
            <input type="checkbox" name="dayTask" class="css-checkbox" id="check" />
-        <span id="task"></span><i class="fa fa-times" aria-hidden="true" id="cross"></i><i class="fa fa-plus" aria-hidden="true" id="plus"></i>
+        <span id="task-focus"></span><i class="fa fa-times" aria-hidden="true" id="cross"></i><i class="fa fa-plus" aria-hidden="true" id="plus"></i>
        </div>
     </div>
     <script src='focus.js'></script>
@@ -78,7 +78,16 @@
     
 <!-- END Random Quotes -->
  
+ <div class = "to-do-app">
+<div id="myDIV" class="header">
+  <h3>Do, or Do Not</h3>
 
+<input id="task" placeholder="Add your item"><button id="add" class="addBtn" >DO</button>
+  </div>
+<ul id="todos" style="margin: 20px;"></ul>
+
+<script src="todo.js"></script>
+</div>
 
     </div>
     
