@@ -6,8 +6,9 @@
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
+    "default_icon": "karate_kick.png",
+    "default_popup": "popup.html",
+      "default_title": "Flying Roundhouse Klick to enter the Dojo"
   },
   "chrome_url_overrides" : {
     "newtab": "index.html"
@@ -19,5 +20,3 @@
     "storage"
   ]
 }
-
-  

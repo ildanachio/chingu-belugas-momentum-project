@@ -1,42 +1,124 @@
 <!doctype html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <title>Weather App</title>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./index.css"/>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
 </head>
+    
+<body class="bgImage">    
+    
+    <div id = 'parentdiv' class="overlay"> 
 
-<body class="bgImage">
-    <div id='parentdiv' class="overlay">
-        <div id="styleThis">
+ <!-- Start Algorithm -->
+ <div class = "algo">
+    <h3>CodeWars API</h3>
+  <div id="kata-container">
+  <div class = "row text-center">
+    <h5 id="kataHolder"> Your Code Challenge Will Appear Here</h5>
+  <br>
+      <h6 id="kataAuthor"></h6>
+ 
+    <div class = "centre">Select difficulty  
+      <levelgroup>
+    <label><input type="radio" name="level" id="easy"> Easy</label>
+    <label><input type="radio" name="level" id="medium"> Medium</label>
+    <label><input type="radio" name="level"id="hard"> Hard</label>
+      </levelgroup><br>
+ <button id = "getKata" class = "btn btn-primary btn-lg">
+        Get Challenge
+      </button>
+   
+      </div>
+  </div>
+  </div>
+  </div>
+  <script type="text/javascript" src="kata.js" ></script>
+ <!-- End Algorithm -->
+
+ <!-- Start Weather App -->
+        <div id = "styleThis"> 
             <img id="image" src=""></img>
             <span id='weather'>loading</span>
             <div id="city"></div>
         </div>
-        <div id="date"></div>
-        <div id="status" class="overlay">
+        
+        <div id="status" class="overlay" >
             <div id="description"></div>
             <div id="wind">Wind Speed: </div>
             <div id="humidity">Humidity:</div>
         </div>
-        <div id="settingsBtn">
-            <button>Settings</button>
-        </div>
-        <div id="settings">
-            <div id="options">
-                <h4>Weather should be in:
-                <span class="userSettings" id="c">Celcius</span>
-                /
-                <span class="userSettings" id="f">Fahrenheit</span>
-                </h4>
-            </div>
+         <!-- End Weather App --> 
+
+        <!-- Start Clock -->
+    
+    <div id="box" class="clock text-center">
+        <div id="view">23.19</div>
+        <div id="greets text-center">
+            <input id="getName" type="text" class="form-control hidden" placeholder="Hello, What is your name?">
+            <div id="showname" class=" well-sm hidden"></div>
         </div>
     </div>
+    <script src='clock.js'></script>    
+    
+    <!-- END Clock -->
+
+    <!-- START Focus of the Day -->
+    <div class="dayFocus text-center">
+        <div id = "inputDiv">
+            <label for="dayTask"> What is your main focus for today? </label><br>
+            <input id="dayTask" type="text" placeholder="Enter your task here" />
+        </div>
+       <div id="taskDiv">
+          <span id="title"> TODAY</span> <br> 
+           <input type="checkbox" name="dayTask" class="css-checkbox" id="check" />
+        <span id="task-focus"></span><i class="fa fa-times" aria-hidden="true" id="cross"></i><i class="fa fa-plus" aria-hidden="true" id="plus"></i>
+       </div>
+    </div>
+    <script src='focus.js'></script>
+ <!-- END Focus of the Day -->
+
+    <!-- Start Random Quotes -->
+    
+  <div class="random-quote">
+  	<div class="row contentArea">
+  		<div class="col-xs-8 col-md-8 col-md-offset-2 col-xs-offset 2 test">
+            <p class = "jokeArea"></p>
+            <img src="http://res.cloudinary.com/dx2najekz/image/upload/v1486125449/twitter_vvpuy2.png" class="img-responsive twitter-share-button" </a>
+  			<button onclick="getQuote()" id="newJoke">Make me laugh</button>
+  		</div>
+  	</div>
+  </div>
+  <!-- DOM Utility functions -->    
+  <script src="https://rawgit.com/jesstelford/a981e6877034231bd43b526a07b3a7b4/raw/js1-utilities.js"></script>
+  <script src="https://use.fontawesome.com/9acb8c974f.js"></script>
+  <!-- Our code -->
+  <script src="quotes.js"></script> 
+    
+<!-- END Random Quotes -->
+ 
+ <div class = "to-do-app">
+<div id="myDIV" class="header">
+  <h3>Do, or Do Not</h3>
+
+<input id="task" placeholder="Add your item"><button id="add" class="addBtn" >DO</button>
+  </div>
+<ul id="todos" style="margin: 20px;"></ul>
+
+<script src="todo.js"></script>
+</div>
+
+    </div>
+    
     <script src="./index.js"></script>
 </body>
-
 </html>
