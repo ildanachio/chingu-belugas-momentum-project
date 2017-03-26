@@ -18,7 +18,7 @@
 </head>
 
 <body id="body">
-    <div class="container-fluid">
+    <div class="container-fluid overlay">
         <!-- container start -->
         <div id='topHeader' class="row">
             <!-- topheader should contain icons for text editor, weather and most used link list -->
@@ -69,10 +69,11 @@
         <!-- END Focus of the Day -->
 
         <!-- start random quotes -->
-    <div class='rquotes'>
+    <div class='rquotes' id="randomQuotes">
         <div class="contentArea">
             <div class="textColorChange test">
-                <p onclick="getQuote()" id="newJoke" class="jokeArea">"Chuck Norris' programs never exit, they terminate."</p>
+                <p onclick="getQuote()" id="newJoke" class="jokeArea">
+                "Chuck Norris' programs never exit, they terminate.<br></p>
             </div>
         </div>
     </div>

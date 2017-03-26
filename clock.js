@@ -51,7 +51,7 @@ function dayPhase(hour) {
         return "afternoon"
     } else if (hour > 16 & hour <= 24) {
         return "evening"
-    } else if (hour > 24 & hour <= 16) {
+    } else if (hour >= 0 & hour <= 04) {
         return "night"
     }
 }

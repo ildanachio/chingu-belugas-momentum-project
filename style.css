@@ -2,7 +2,7 @@
     font-family: 'Quicksand', sans-serif;
     color: white;
     background-size: cover;
-    overflow-x:hidden;
+    overflow:hidden;
     font-family: 'Quicksand', sans-serif;
     background: url('https://source.unsplash.com/category/nature') no-repeat center center fixed;
       -webkit-background-size: cover;
@@ -10,16 +10,19 @@
       -o-background-size: cover;
 }
 
+.overlay{
+    background: rgba(0,0,0,0.2);
+}
 
 /*weather style*/
 
 .weatherFont {
-    font-size: 5vmin;
+    font-size: 4vmin;
     font-weight: normal;
 }
 
 .weatherFont#wCondition {
-    font-size: 4vmin;
+    font-size: 3vmin;
     text-transform: lowercase;
 }
 
@@ -31,7 +34,7 @@
 }
 
 #viewBox{
-    padding-top: 11vh;
+    padding-top: 10vh;
     padding-bottom:0vh;
     text-align: center;
     font-size: 20vmin;
@@ -68,10 +71,11 @@
 #label{
     width: 100%;
     text-align: center;
-    padding-top: 3vh;
-    padding-bottom:0vh;
+    padding-top: 6vh;
+    padding-bottom: 0vh;
     box-sizing: border-box;
     font-size: 5vmin;
+    font-weight: 500;
 }
 
 #dayTask{
@@ -88,7 +92,7 @@
 
 .taskBox{
     width: 100%;
-    padding-top: 3vh;
+    padding-top: 6vh;
     padding-bottom:0vh;
     text-align: center;
     box-sizing: border-box;
@@ -109,13 +113,18 @@
 
 /*Random Quotes*/
 .rquotes{
-    font-size:2vh;
+    font-size:3vh;
+    font-weight: normal;
     text-align: center;
-    padding-top:6vh;
+    padding-top:4vh;
+    padding-bottom:4vh;
 }
 
 #newJoke{
     cursor:pointer;
 }
 
-syling the placeholders
+/*styling the placeholders*/
+input[type="text"]::-webkit-input-placeholder {
+  color: #C5C3D0;
+}
