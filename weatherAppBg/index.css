@@ -168,7 +168,7 @@ padding-bottom:35px;
 /* end weather css */
 
 /* focus of the day */
-input{
+#dayTask{
 	padding:1%;
 	border-top:none;
 	border-left:none;
@@ -202,7 +202,5 @@ input:focus::-webkit-input-placeholder
 
 input[type=checkbox] , #cross, #plus{
 	cursor:pointer;
-}
 
 /* end focus of the day CSS */
-
