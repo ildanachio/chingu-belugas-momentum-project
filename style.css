@@ -58,6 +58,8 @@
 #label{
     width: 100%;
     text-align: center;
+    padding-top: 0vh;
+    padding-bottom:0vh;
     box-sizing: border-box;
     font-size: 5vmin;
 }
@@ -75,6 +77,8 @@
 
 .taskBox{
     width: 100%;
+    padding-top: 0vh;
+    padding-bottom:0vh;
     text-align: center;
     box-sizing: border-box;
     font-size: 4vmin;
@@ -88,6 +92,17 @@
     padding-left: 1%;
 }
 
-input[type=checkbox] , #cross, #plus{
+#cross, #plus{
+    cursor:pointer;
+}
+
+/*Random Quotes*/
+.rquotes{
+    font-size:2vh;
+    text-align: center;
+    padding-top:14vh;
+}
+
+#newJoke{
     cursor:pointer;
 }
