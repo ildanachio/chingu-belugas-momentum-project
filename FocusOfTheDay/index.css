@@ -24,7 +24,7 @@ input:focus::-webkit-input-placeholder
 	padding-top: 3%; 
 }
 
-#task{
+#task-focus{
 	padding-right: 1%;
 	padding-left: 1%;
 }
