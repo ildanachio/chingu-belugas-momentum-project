@@ -18,44 +18,46 @@
 
 <body id="body">
     <div class="container-fluid">
-    <!-- container start -->
-
-    <div id='topHeader' class="row">
-        <!-- topheader should contain icons for text editor, weather and most used link list -->
-
-        <!-- Start WeatherApp  -->
-        <div id="styleThis" class="col-xs-2 text-right pull-right">
-            <span id='weather' class="weatherFont">loading</span>
-            <span id='wCondition' class="weatherFont"></span>
-            <!-- <div class="col-xs-6"><img id="image" src="./loadinfo2.gif"></img>
+        <!-- container start -->
+        <div id='topHeader' class="row">
+            <!-- topheader should contain icons for text editor, weather and most used link list -->
+            <!-- Start WeatherApp  -->
+            <div id="styleThis" class="col-xs-2 text-right pull-right">
+                <span id='weather' class="weatherFont">loading</span>
+                <span id='wCondition' class="weatherFont"></span>
+                <!-- <div class="col-xs-6"><img id="image" src="./loadinfo2.gif"></img>
             </div> -->
-            <!-- <div class="col-xs-6"><span id='weather'>loading</span></div> -->
+                <!-- <div class="col-xs-6"><span id='weather'>loading</span></div> -->
+            </div>
+            <script src="./weatherApp.js"></script>
+            <!-- END WeatherApp -->
+            <!-- text-editor icon goes here -->
+            <!-- search-bar goes here -->
+            <!-- most used linked list goes here -->
+            <!-- end top header -->
         </div>
-        <script src="./weatherApp.js"></script>
-        <!-- END WeatherApp -->
-        <!-- text-editor icon goes here -->
-        <!-- search-bar goes here -->
-        <!-- most used linked list goes here -->
-        <!-- end top header -->
-    </div>
 
-    <!-- Start Clock -->
-    <div id="box" class="container-fluid">
-        <div id="viewBox" class="jumbotron">
-            <span id="view" ></span>
-            <div id="showname"><input id="getName" type="text" class="hidden" placeholder="Hello, What is your name?"></div>
-    </div>
-    <script src='clock.js'></script>
-    <!-- END Clock -->
+        <!-- Start Clock -->
+        <div id="box" class="container-fluid">
+            <div id="viewBox" class="jumbotron">
+                <span id="view"></span>
+                <div id="showname">
+                    <input id="getName" type="text" class="hidden" placeholder="Hello, What is your name?">
+                </div>
+            </div>
+            <script src='clock.js'></script>
+            <!-- END Clock -->
 
 
 
 
 
 
-    <!-- end of container -->
-</div>
 
+
+
+            <!-- end of container -->
+        </div>
 </body>
 
 </html>

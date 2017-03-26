@@ -1,4 +1,4 @@
-localStorage.clear();
+//localStorage.clear();
 var getUserName = document.getElementById("getName");
 getUserName.classList.remove("hidden");
 var userName = localStorage.getItem("name");
@@ -26,9 +26,9 @@ function clock() {
 
     //console.log(currentHour,dateTime.getMinutes(), dateTime.getSeconds());
     if(Hour < 10){
-        document.getElementById("view").textContent = dateTime.getHours() + ":" + dateTime.getMinutes();
-    }else{
         document.getElementById("view").textContent = dateTime.getHours() + ":" + '0'+ dateTime.getMinutes();
+    }else{
+        document.getElementById("view").textContent = dateTime.getHours() + ":" + dateTime.getMinutes();
     }
 
     var Phase = dayPhase(Hour);
