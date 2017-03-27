@@ -117,7 +117,7 @@
     font-weight: normal;
     text-align: center;
     padding-top:4vh;
-    padding-bottom:10vh;
+    padding-bottom:50vh;
 }
 
 #newJoke{
@@ -127,4 +127,22 @@
 /*styling the placeholders*/
 input[type="text"]::-webkit-input-placeholder {
   color: #C5C3D0;
+}
+
+/*Adding media-query*/
+@media screen and (max-width: 890px) {
+
+#label{
+padding-top: 0vh;
+}
+
+.taskBox{
+    padding-top: 0vh;
+}
+
+.rquotes{
+    padding-top:0vh;
+    padding-bottom:1000px;
+}
+
 }

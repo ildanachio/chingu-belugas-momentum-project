@@ -1,6 +1,9 @@
-let quoteContainer = document.querySelector(".jokeArea")
-let bgColor = document.getElementsByClassName("backgroundColorChange")
-let textColor = document.getElementsByClassName("textColorChange")
+let quoteContainer = document.querySelector(".jokeArea");
+let bgColor = document.getElementsByClassName("backgroundColorChange");
+let textColor = document.getElementsByClassName("textColorChange");
+let clickArea = document.getElementById("newJoke");
+
+clickArea.onclick = function(){getQuote()};
 
 let state = {
   currentQuote:'',
@@ -33,10 +36,10 @@ function getQuote(){    fetch("http://api.icndb.com/jokes/random")
       }
     )}
 
-    let tweet = document.querySelector(".twitter-share-button")
-    tweet.addEventListener("click", function(){
-      window.open('https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text='+state.currentQuote)
-    })
+    // let tweet = document.querySelector(".twitter-share-button")
+    // tweet.addEventListener("click", function(){
+    //   window.open('https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text='+state.currentQuote)
+    // })
 
 getQuote()
 
