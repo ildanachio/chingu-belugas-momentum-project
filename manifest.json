@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+
+    "name": "WebTao App",
+    "description": "This extension shows a Google Image search result for the current page",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "permissions": [
+        "activeTab",
+        "https://ajax.googleapis.com/",
+        "geolocation",
+        "storage"
+    ],
+
+    "content_scripts": [{
+        "matches": ["http://www.google.com/*",
+            "https://use.fontawesome.com/9acb8c974f.js",
+            "https://code.jquery.com/jquery-3.1.1.min.js",
+            "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
+            "https://rawgit.com/jesstelford/a981e6877034231bd43b526a07b3a7b4/raw/js1-utilities.js",
+            "http://*/*", "https://*/*"
+        ],
+        "css": ["style.css"],
+        "js": ["clock.js", "focus.js", "kata.js", "quotes.js", "todo.js", "weatherApp.js"]
+    }],
+
+    "content_security_policy": "script-src 'self' https://use.fontawesome.com/9acb8c974f.js https://code.jquery.com/jquery-3.1.1.min.js https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js https://rawgit.com/jesstelford/a981e6877034231bd43b526a07b3a7b4/raw/js1-utilities.js; object-src 'self'"
+}
