@@ -22,13 +22,27 @@ html,body{
 }
 
 /*style header icons*/
-.icons{
-    padding-top: 1vmin;
+/*#btnAnimation{
+    -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+         -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+}*/
 
+#btnContainer .btn-default{
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    border: 0 none;
+    border-radius: 0;
+    outline: 0 none;
+    box-shadow: none;
 }
 
-
-
+#btnContainer .btn-default:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+}
 
 /*weather style*/
 

@@ -34,12 +34,12 @@
             <script src="./weatherApp.js"></script>
             <!-- END WeatherApp -->
             <!-- text-editor icon goes here -->
-            <div class="row">
-                <div class="col-xs-6">
-                    <div class="col-xs-1 text-left pull-left icons"><i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i></div>
-                    <div class="col-xs-1 text-left pull-left icons"><i class="fa fa-cog fa-lg" aria-hidden="true"></i></div>
-                    <div class="col-xs-1 text-left pull-left icons"><i class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i></div>
-                    <div class="col-xs-1 text-left pull-left icons"><i class="fa fa-code fa-lg" aria-hidden="true"></i></div>
+            <div id="btnContainer" class="row">
+                <div class="col-xs-6 btnAnimation">
+                    <div id="about" class="col-xs-1 text-left pull-left icons"><div class="btn btn-default"><i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i></div></div>
+                    <div id="setting" class="col-xs-1 text-left pull-left icons"><div class="btn btn-default"><i class="fa fa-cog fa-lg" aria-hidden="true"></i></div></div>
+                    <div id="todo" class="col-xs-1 text-left pull-left icons"><div class="btn btn-default"><i class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i></div></div>
+                    <div id="code" class="col-xs-1 text-left pull-left icons"><div class="btn btn-default"><i class="fa fa-code fa-lg" aria-hidden="true"></i></div></div>
                 </div>
             </div>
             <!-- search-bar goes here -->
@@ -52,7 +52,7 @@
             <div id="viewBox" class="jumbotron">
                 <span id="view"></span>
                 <div id="showname">
-                    <input id="getName" type="text" class="hidden" placeholder="Hello, What is your name?">
+                    <input id="getName" type="text" class="hidden" placeholder="Your name?">
                 </div>
             </div>
             <script src='clock.js'></script>
