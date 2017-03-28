@@ -1,8 +1,11 @@
+html,body{
+    height: 100%
+}
 #body {
     font-family: 'Quicksand', sans-serif;
     color: white;
     background-size: cover;
-    overflow:hidden;
+    /*overflow:hidden;*/
     font-family: 'Quicksand', sans-serif;
     background: url('https://source.unsplash.com/category/nature') no-repeat center center fixed;
       -webkit-background-size: cover;
@@ -10,9 +13,22 @@
       -o-background-size: cover;
 }
 
-.overlay{
-    background: rgba(0,0,0,0.3);
+.overlay {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: fixed;
 }
+
+/*style header icons*/
+.icons{
+    padding-top: 1vmin;
+
+}
+
+
+
 
 /*weather style*/
 
@@ -47,7 +63,7 @@
     text-align: center;
     padding: 12px 20px;
     box-sizing: border-box;
-    font-size: 5vmin;
+    font-size: 4vmin;
     font-weight: normal;
     border: none;
     outline: none;
@@ -113,11 +129,12 @@
 
 /*Random Quotes*/
 .rquotes{
-    font-size:3vh;
+    font-size:1em;
     font-weight: normal;
     text-align: center;
     padding-top:4vh;
-    padding-bottom:50vh;
+    /*position: fixed;*/
+    bottom: 0;
 }
 
 #newJoke{
@@ -129,20 +146,34 @@ input[type="text"]::-webkit-input-placeholder {
   color: #C5C3D0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /*Adding media-query*/
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 930px) {
+
+#box{
+    width: 70%;
+}
+
+#viewBox{
+    padding-top:8vh;
+}
 
 #label{
 padding-top: 0vh;
 }
 
 .taskBox{
-    padding-top: 0vh;
-}
-
-.rquotes{
-    padding-top:0vh;
-    padding-bottom:1000px;
+    padding-top: 1vh;
 }
 
 }

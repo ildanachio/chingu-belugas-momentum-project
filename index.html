@@ -20,6 +20,7 @@
 <body id="body">
     <div class="container-fluid overlay">
         <!-- container start -->
+        <!-- Header start -->
         <div id='topHeader' class="row">
             <!-- topheader should contain icons for text editor, weather and most used link list -->
             <!-- Start WeatherApp  -->
@@ -33,13 +34,21 @@
             <script src="./weatherApp.js"></script>
             <!-- END WeatherApp -->
             <!-- text-editor icon goes here -->
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="col-xs-1 text-left pull-left icons"><i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i></div>
+                    <div class="col-xs-1 text-left pull-left icons"><i class="fa fa-cog fa-lg" aria-hidden="true"></i></div>
+                    <div class="col-xs-1 text-left pull-left icons"><i class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i></div>
+                    <div class="col-xs-1 text-left pull-left icons"><i class="fa fa-code fa-lg" aria-hidden="true"></i></div>
+                </div>
+            </div>
             <!-- search-bar goes here -->
             <!-- most used linked list goes here -->
             <!-- end top header -->
         </div>
-
-        <!-- Start Clock -->
+        <!-- Header end -->
         <div id="box" class="container-fluid">
+            <!-- Start Clock -->
             <div id="viewBox" class="jumbotron">
                 <span id="view"></span>
                 <div id="showname">
@@ -47,52 +56,43 @@
                 </div>
             </div>
             <script src='clock.js'></script>
-        <!-- END Clock -->
-
-        <!-- START Focus of the Day -->
-        <div class="dayTaskContainer">
-            <div id="inputDiv">
-                <div id="label">What is your main focus for today?</div>
-                <input id="dayTask" type="text" placeholder="Enter your task here" />
+            <!-- END Clock -->
+            <!-- START Focus of the Day -->
+            <div class="dayTaskContainer">
+                <div id="inputDiv">
+                    <div id="label">What is your main focus for today?</div>
+                    <input id="dayTask" type="text" placeholder="Enter your task here" />
+                </div>
+                <div class="taskBox">
+                    <div id="taskDiv">
+                        <span id="title"> TODAY</span>
+                        <br>
+                        <input type="checkbox" name="dayTask" class="css-checkbox" id="check" />
+                        <span id="task"></span><i class="fa fa-times" aria-hidden="true" id="cross"></i><i class="fa fa-plus" aria-hidden="true" id="plus"></i>
+                    </div>
+                </div>
             </div>
-            <div class="taskBox">
-                <div id="taskDiv" >
-                <span id="title"> TODAY</span>
-                <br>
-                <input type="checkbox" name="dayTask" class="css-checkbox" id="check" />
-                <span id="task"></span><i class="fa fa-times" aria-hidden="true" id="cross"></i><i class="fa fa-plus" aria-hidden="true" id="plus"></i>
+            <script src='focus.js'></script>
+            <!-- END Focus of the Day -->
+            <!-- start random quotes -->
+            <div class='rquotes' id="randomQuotes">
+                <div class="contentArea">
+                    <div class="textColorChange test">
+                        <p id="newJoke" class="jokeArea">
+                            "Chuck Norris' programs never exit, they terminate.
+                            <br>
+                        </p>
+                    </div>
+                </div>
             </div>
-            </div>
-
-        </div>
-        <script src='focus.js'></script>
-        <!-- END Focus of the Day -->
-
-        <!-- start random quotes -->
-    <div class='rquotes' id="randomQuotes">
-        <div class="contentArea">
-            <div class="textColorChange test">
-                <p id="newJoke" class="jokeArea">
-                "Chuck Norris' programs never exit, they terminate.<br></p>
-            </div>
-        </div>
-    </div>
-    <!-- DOM Utility functions -->
-    <script src="https://rawgit.com/jesstelford/a981e6877034231bd43b526a07b3a7b4/raw/js1-utilities.js"></script>
-    <!-- Our code -->
-    <script src="quotes.js"></script>
-    <!-- END Random Quotes -->
-
-
-
-
-
-
-
-
-
+            <!-- DOM Utility functions -->
+            <script src="https://rawgit.com/jesstelford/a981e6877034231bd43b526a07b3a7b4/raw/js1-utilities.js"></script>
+            <!-- Our code -->
+            <script src="quotes.js"></script>
+            <!-- END Random Quotes -->
             <!-- end of container -->
         </div>
+    </div>
 </body>
 
 </html>
