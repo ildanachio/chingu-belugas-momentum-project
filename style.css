@@ -1,6 +1,8 @@
-html,body{
+html,
+body {
     height: 100%
 }
+
 #body {
     font-family: 'Quicksand', sans-serif;
     color: white;
@@ -8,9 +10,9 @@ html,body{
     /*overflow:hidden;*/
     font-family: 'Quicksand', sans-serif;
     background: url('https://source.unsplash.com/category/nature') no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .overlay {
@@ -21,7 +23,10 @@ html,body{
     position: fixed;
 }
 
+
 /*style header icons*/
+
+
 /*#btnAnimation{
     -webkit-transition: all 0.3s ease;
        -moz-transition: all 0.3s ease;
@@ -29,7 +34,7 @@ html,body{
             transition: all 0.3s ease;
 }*/
 
-#btnContainer .btn-default{
+#btnContainer .btn-default {
     background: rgba(0, 0, 0, 0);
     color: white;
     border: 0 none;
@@ -38,22 +43,26 @@ html,body{
     font-size: 2.2vmin;
 }
 
-#btnContainer .btn-default:hover{
+#btnContainer .btn-default:hover {
     cursor: pointer;
-    /*background: rgba(0, 0, 0, 0.3);*/
-    /*border-radius: 10%*/;
+    background: rgba(0, 0, 0, 0.3);
+    /*border-radius: 10%*/
+    ;
     /*border: 1px solid gray;*/
     transition: all 0.9s ease;
     -webkit-transition: all 0.9s ease;
-       -moz-transition: all 0.9s ease;
-         -o-transition: all 0.9s ease;
-            transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease;
 }
+
+
 /*#about:hover{
     transform: rotate(20deg);
     transition: all 0.5s ease;
  }
 */
+
 
 /*weather style*/
 
@@ -70,20 +79,20 @@ html,body{
 
 /*clock style*/
 
-#box{
+#box {
     width: 60%;
 }
 
-#viewBox{
+#viewBox {
     padding-top: 10vh;
-    padding-bottom:0vh;
+    padding-bottom: 0vh;
     text-align: center;
     font-size: 20vmin;
     font-weight: normal;
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
 }
 
-#getName{
+#getName {
     width: 100%;
     text-align: center;
     padding: 12px 20px;
@@ -93,10 +102,10 @@ html,body{
     border: none;
     outline: none;
     border-bottom: 1px solid white;
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
 }
 
-#showname{
+#showname {
     width: 100%;
     text-align: center;
     margin-top: -4vmin;
@@ -108,8 +117,10 @@ html,body{
     border: none;
 }
 
+
 /*Focus of the day style*/
-#label{
+
+#label {
     width: 100%;
     text-align: center;
     padding-top: 6vh;
@@ -119,7 +130,7 @@ html,body{
     font-weight: 500;
 }
 
-#dayTask{
+#dayTask {
     width: 100%;
     text-align: center;
     padding: 12px 20px;
@@ -128,13 +139,13 @@ html,body{
     border: none;
     outline: none;
     border-bottom: 1px solid white;
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
 }
 
-.taskBox{
+.taskBox {
     width: 100%;
     padding-top: 6vh;
-    padding-bottom:0vh;
+    padding-bottom: 0vh;
     text-align: center;
     box-sizing: border-box;
     font-size: 4vmin;
@@ -143,80 +154,108 @@ html,body{
     outline: none;
 }
 
-#task{
+#task {
     padding-right: 1%;
     padding-left: 1%;
 }
 
-#cross, #plus{
-    cursor:pointer;
+#cross,
+#plus {
+    cursor: pointer;
 }
 
+
 /*Random Quotes*/
-.rquotes{
-    font-size:1em;
+
+.rquotes {
+    font-size: 1em;
     font-weight: normal;
     text-align: center;
-    padding-top:4vh;
+    padding-top: 4vh;
     /*position: fixed;*/
     bottom: 0;
 }
 
-#newJoke{
-    cursor:pointer;
+#newJoke {
+    cursor: pointer;
 }
+
 
 /*styling the placeholders*/
+
 input[type="text"]::-webkit-input-placeholder {
-  color: #C5C3D0;
+    color: #C5C3D0;
 }
+
 
 /*popup styles*/
-.Spopup,.Apopup{
+
+.Spopup,
+.TDpopup {
     position: absolute;
-    /*height: 410px;*/
-    display:none;
+    /*display:none;*/
     width: 250px;
     background: rgba(0, 0, 0, 0.5);
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     color: white;
-    /*border: 1px solid white;*/
+    border: 1px solid white;
     z-index: 10;
-    top:5%;
-    padding: 1vmin;
+    top: 5%;
+    padding: 2vmin;
 }
 
-.bgBorder{
-     cursor:pointer;
-     text-decoration: underline;
+.bgBorder {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
+#tdTask {
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    background: rgba(0, 0, 0, 0);
+}
 
+button{
+    width: 100%;
+    padding-top: 1px;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0);
+}
 
+#todos{
+    padding:2vh;
+    text-align: left;
+    margin-left: -30px;
+}
 
-
-
+.remove{
+    cursor: pointer;
+    padding-right: 20px;
+}
 
 
 
 
 /*Adding media-query*/
+
 @media screen and (max-width: 930px) {
-
-#box{
-    width: 70%;
-}
-
-#viewBox{
-    padding-top:8vh;
-}
-
-#label{
-padding-top: 0vh;
-}
-
-.taskBox{
-    padding-top: 1vh;
-}
-
+    #box {
+        width: 70%;
+    }
+    #viewBox {
+        padding-top: 8vh;
+    }
+    #label {
+        padding-top: 0vh;
+    }
+    .taskBox {
+        padding-top: 1vh;
+    }
 }

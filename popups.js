@@ -20,5 +20,3 @@ $('resetSettings').on('click',function(e){
     localStorage.clear();
     window.location.reload()
 })
-
-//
