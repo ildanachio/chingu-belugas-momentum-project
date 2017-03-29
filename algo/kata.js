@@ -9,7 +9,7 @@ var easyArr = ["tiny-three-pass-compiler","6-by-6-skyscrapers","mystery-function
  
     var codeWarsUrl = `https://www.codewars.com/api/v1/code-challenges/`;
 
-    //return a random challenge name depending on level of difficulty selrcted by user.
+    //return a random challenge name depending on level of difficulty selected by user.
     
 function getChallengeName(){
      if (document.getElementById('easy').checked) {var challengeNum = 
@@ -39,6 +39,7 @@ $.getJSON(codeWarsUrl+returnName, function(data) {
   let authorList = data["createdBy"]["username"];  let authorUrl = data["createdBy"]["url"];
  
   $("#kataHolder").html(data["description"]);
+  $("#kataHolder").addClass('text-justify');
  $("#kataAuthor").html(authorList);
   });         
   });
