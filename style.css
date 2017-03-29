@@ -35,14 +35,25 @@ html,body{
     border: 0 none;
     border-radius: 0;
     outline: 0 none;
-    box-shadow: none;
+    font-size: 2.2vmin;
 }
 
 #btnContainer .btn-default:hover{
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.5);
-    transition: all 0.5s ease;
+    /*background: rgba(0, 0, 0, 0.3);*/
+    /*border-radius: 10%*/;
+    /*border: 1px solid gray;*/
+    transition: all 0.9s ease;
+    -webkit-transition: all 0.9s ease;
+       -moz-transition: all 0.9s ease;
+         -o-transition: all 0.9s ease;
+            transition: all 0.9s ease;
 }
+/*#about:hover{
+    transform: rotate(20deg);
+    transition: all 0.5s ease;
+ }
+*/
 
 /*weather style*/
 
@@ -160,7 +171,25 @@ input[type="text"]::-webkit-input-placeholder {
   color: #C5C3D0;
 }
 
+/*popup styles*/
+.Spopup,.Apopup{
+    position: absolute;
+    /*height: 410px;*/
+    display:none;
+    width: 250px;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 3vmin;
+    color: white;
+    /*border: 1px solid white;*/
+    z-index: 10;
+    top:5%;
+    padding: 1vmin;
+}
 
+.bgBorder{
+     cursor:pointer;
+     text-decoration: underline;
+}
 
 
 

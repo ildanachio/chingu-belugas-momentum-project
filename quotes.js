@@ -1,11 +1,11 @@
-let quoteContainer = document.querySelector(".jokeArea");
-let bgColor = document.getElementsByClassName("backgroundColorChange");
-let textColor = document.getElementsByClassName("textColorChange");
-let clickArea = document.getElementById("newJoke");
+var quoteContainer = document.querySelector(".jokeArea");
+var bgColor = document.getElementsByClassName("backgroundColorChange");
+var textColor = document.getElementsByClassName("textColorChange");
+var clickArea = document.getElementById("newJoke");
 
 clickArea.onclick = function(){getQuote()};
 
-let state = {
+var state = {
   currentQuote:'',
   color:''
 }

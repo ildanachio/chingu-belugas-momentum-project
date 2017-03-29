@@ -1,6 +1,5 @@
 var weatherElement = document.getElementById("weather");
-//var weatherIcon  = document.getElementById("image");
-var fahren = false;
+localStorage.setItem("unit", "fahren");
 weatherModule();
 setInterval(weatherModule,1800000);
 
@@ -45,7 +44,7 @@ function getWeather(lat,long) {
 //Display Weather
 function displayWeather(data,lat,long){
     var temp;
-    if(fahren){
+    if(localStorage.getItem("unit") === "fahren"){
         temp = Math.ceil(data.current.temp_f) + "°F";
     }
     else{

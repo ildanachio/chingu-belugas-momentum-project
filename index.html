@@ -36,10 +36,10 @@
             <!-- text-editor icon goes here -->
             <div id="btnContainer" class="row">
                 <div class="col-xs-6 btnAnimation">
-                    <div id="about" class="col-xs-1 text-left pull-left icons"><div class="btn btn-default"><i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i></div></div>
-                    <div id="setting" class="col-xs-1 text-left pull-left icons"><div class="btn btn-default"><i class="fa fa-cog fa-lg" aria-hidden="true"></i></div></div>
-                    <div id="todo" class="col-xs-1 text-left pull-left icons"><div class="btn btn-default"><i class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i></div></div>
-                    <div id="code" class="col-xs-1 text-left pull-left icons"><div class="btn btn-default"><i class="fa fa-code fa-lg" aria-hidden="true"></i></div></div>
+                    <div class="col-xs-1 text-left pull-left btn btn-default about"><i id="about" class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i></div>
+                    <div class="col-xs-1 text-left pull-left btn btn-default cog"><i id="cog" class="fa fa-cog fa-lg" aria-hidden="true"></i></div>
+                    <div class="col-xs-1 text-left pull-left btn btn-default todo"><i id="todo" class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i></div>
+                    <div class="col-xs-1 text-left pull-left btn btn-default code"><i id="code" class="fa fa-code fa-lg" aria-hidden="true"></i></div>
                 </div>
             </div>
             <!-- search-bar goes here -->
@@ -52,7 +52,7 @@
             <div id="viewBox" class="jumbotron">
                 <span id="view"></span>
                 <div id="showname">
-                    <input id="getName" type="text" class="hidden" placeholder="Your name?">
+                    <input id="getName" type="text" class="hidden" placeholder="enter your name">
                 </div>
             </div>
             <script src='clock.js'></script>
@@ -61,7 +61,7 @@
             <div class="dayTaskContainer">
                 <div id="inputDiv">
                     <div id="label">What is your main focus for today?</div>
-                    <input id="dayTask" type="text" placeholder="Enter your task here" />
+                    <input id="dayTask" type="text" placeholder="enter your task here" />
                 </div>
                 <div class="taskBox">
                     <div id="taskDiv">
@@ -92,6 +92,27 @@
             <!-- END Random Quotes -->
             <!-- end of container -->
         </div>
+        <!-- Popups -->
+            <!-- settings popup -->
+        <div class="Spopup">
+            <div id="settingsPopup">
+                <span>Weather Unit: </span>
+                <span class="bgBorder" id="toggleWeather">toggle</span>
+                <br>
+                <span>User Settings: </span>
+                <span class="bgBorder" id="resetSettings">reset</span>
+            </div>
+        </div>
+        <!-- end settings popup -->
+        <!-- start about popup -->
+        <div class="Apopup">
+            <div id="aboutPopup">
+                <span id="instructions">Note:<em>Click on the extension icon to open up a fiddle</em></span><br>
+                <span>Extension Created By:</span>
+            </div>
+        </div>
+        <script src="popups.js"></script>
+        <!-- end popups -->
     </div>
 </body>
 
