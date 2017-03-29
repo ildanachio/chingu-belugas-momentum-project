@@ -1,7 +1,11 @@
-
 // settings popup
-$('.cog').on('click',function(e){
-    $('.Spopup').toggle();
+$('.cog').on('click', function(e) {
+    if ($('.Spopup').hasClass("hidden")) {
+        $('.Spopup').removeClass("hidden");
+        $('.TDpopup').addClass("hidden");
+    } else {
+        $('.Spopup').addClass("hidden");
+    }
 })
 
 $('#toggleWeather').on('click', function(e) {
@@ -16,7 +20,24 @@ $('#toggleWeather').on('click', function(e) {
     }
 })
 
-$('resetSettings').on('click',function(e){
+$('#resetSettings').on('click', function(e) {
     localStorage.clear();
-    window.location.reload()
+    window.location.reload();
+    console.log('reset');
 })
+
+//todo popup
+$('.todo').on('click', function(e) {
+    if ($('.TDpopup').hasClass("hidden")) {
+        $('.TDpopup').removeClass("hidden");
+        $('.Spopup').addClass("hidden");
+    } else {
+        $('.TDpopup').addClass("hidden");
+    }
+})
+
+//hide popups from click anywhere on the body
+// $('.overlay').on('click',function(e){
+//     $('.Spopup').addClass("hidden");
+//     $('.TDpopup').addClass("hidden");
+// })

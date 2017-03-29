@@ -1,5 +1,5 @@
 var weatherElement = document.getElementById("weather");
-localStorage.setItem("unit", "fahren");
+//localStorage.setItem("unit", "fahren");
 weatherModule();
 setInterval(weatherModule,1800000);
 

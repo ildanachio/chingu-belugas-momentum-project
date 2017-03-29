@@ -193,7 +193,6 @@ input[type="text"]::-webkit-input-placeholder {
 .Spopup,
 .TDpopup {
     position: absolute;
-    /*display:none;*/
     width: 250px;
     background: rgba(0, 0, 0, 0.5);
     font-size: 2.5vmin;

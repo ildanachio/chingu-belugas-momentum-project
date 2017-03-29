@@ -1,4 +1,4 @@
-localStorage.clear();
+//localStorage.clear();
 var inputDiv = document.getElementById("inputDiv");//form div
 var taskDiv = document.getElementById('taskDiv'); //task div to display entered task
 var dayTask = document.getElementById("dayTask"); //text input
