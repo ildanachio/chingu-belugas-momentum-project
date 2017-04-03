@@ -32,7 +32,8 @@ function getQuote(){    fetch("http://api.icndb.com/jokes/random")
       //applyColor(bgColor)
       //applyColor(textColor)
       quoteContainer.innerHTML = '"'+callback.value.joke+'"'
-      state.currentQuote = callback.value.joke
+      state.currentQuote = callback.value.joke;
+	  quoteContainer.classList.addClass("animated lightSpeedIn");
       }
     )}
 
