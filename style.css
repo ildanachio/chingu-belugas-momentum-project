@@ -13,6 +13,10 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+	-webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
 }
 
 .overlay {
@@ -27,12 +31,12 @@ body {
 /*style header icons*/
 
 
-/*#btnAnimation{
-    -webkit-transition: all 0.3s ease;
-       -moz-transition: all 0.3s ease;
-         -o-transition: all 0.3s ease;
-            transition: all 0.3s ease;
-}*/
+#btnAnimation{
+    -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+         -o-transition: all 1s ease;
+            transition: all 1s ease;
+}
 
 #btnContainer .btn-default {
     background: rgba(0, 0, 0, 0);
@@ -55,7 +59,6 @@ body {
     -o-transition: all 0.9s ease;
     transition: all 0.9s ease;
 }
-
 
 /*#about:hover{
     transform: rotate(20deg);
@@ -140,6 +143,15 @@ body {
     outline: none;
     border-bottom: 1px solid white;
     background: rgba(0, 0, 0, 0);
+	transition: color 0.9s ease;
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+}
+
+#dayTask:focus::-webkit-input-placeholder{
+    color: transparent;
 }
 
 .taskBox {
