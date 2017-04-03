@@ -108,6 +108,11 @@ body {
     background: rgba(0, 0, 0, 0);
 }
 
+#getName:focus::-webkit-input-placeholder{
+    color: transparent;
+    transition-duration: 0.5s;
+}
+
 #showname {
     width: 100%;
     text-align: center;
@@ -152,6 +157,7 @@ body {
 
 #dayTask:focus::-webkit-input-placeholder{
     color: transparent;
+    transition-duration: 0.5s;
 }
 
 .taskBox {
