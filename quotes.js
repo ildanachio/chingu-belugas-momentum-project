@@ -31,9 +31,12 @@ function getQuote(){    fetch("http://api.icndb.com/jokes/random")
       state.color = newColor()
       //applyColor(bgColor)
       //applyColor(textColor)
-      quoteContainer.innerHTML = '"'+callback.value.joke+'"'
+      quoteContainer.innerHTML = '"'+callback.value.joke+'"';
+      $(".jokeArea").addClass("animated pulse").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+      $(this).removeClass('animated pulse');
       state.currentQuote = callback.value.joke;
-	  quoteContainer.classList.addClass("animated lightSpeedIn");
+    
+    }); 
       }
     )}
 

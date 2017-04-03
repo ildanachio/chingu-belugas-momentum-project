@@ -201,6 +201,8 @@ body {
 	right:0;
 	bottom: 0;
 	text-align: center;
+    transition-property: display;
+    transition-duration: 0.5s;
 }
 
 
