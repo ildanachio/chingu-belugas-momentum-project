@@ -28,7 +28,7 @@ function clock() {
         var Hour = dateTime.getHours();
     }
 
-    console.log(Hour)
+    //console.log(Hour)
 
     var Minutes = dateTime.getMinutes();
     //console.log(currentHour,dateTime.getMinutes(), dateTime.getSeconds());
@@ -45,9 +45,9 @@ function clock() {
 
 //Calculate the phase of the day
 function dayPhase(hour) {
-    if (hour > 04 & hour <= 12) {
+    if (hour > 04 & hour <= 11) {
         return "morning"
-    } else if (hour > 12 & hour <= 16) {
+    } else if (hour => 12 & hour <= 16) {
         return "afternoon"
     } else if (hour > 16 & hour <= 24) {
         return "evening"
