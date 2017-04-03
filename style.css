@@ -170,7 +170,7 @@ body {
 .rquotes {
     font-size: 1em;
     font-weight: normal;
-    text-align: center;
+    /* text-align: center; */
     padding-top: 4vh;
     /*position: fixed;*/
     bottom: 0;
@@ -178,6 +178,11 @@ body {
 
 #newJoke {
     cursor: pointer;
+	position: absolute;
+	left:0;
+	right:0;
+	bottom: 0;
+	text-align: center;
 }
 
 
