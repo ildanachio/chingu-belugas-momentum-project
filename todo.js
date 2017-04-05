@@ -15,6 +15,7 @@ if ($('#task').val() !== "") {
     localStorage.setItem('todo', JSON.stringify(todos));
 
     show();
+    $('#task').val("");
 }
     return false;
 }
