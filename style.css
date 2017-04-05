@@ -87,11 +87,11 @@ body {
 }
 
 #viewBox {
-    padding-top: 12vh;
+    padding-top: 15vh;
     padding-bottom: 0vh;
     text-align: center;
-    font-size: 20vmin;
-    font-weight: normal;
+    font-size: 25vmin;
+    font-weight: bold;
     background: rgba(0, 0, 0, 0);
 }
 
@@ -131,7 +131,7 @@ body {
 #label {
     width: 100%;
     text-align: center;
-    padding-top: 7vh;
+    padding-top: 0vh;
     padding-bottom: 0vh;
     box-sizing: border-box;
     font-size: 5vmin;
@@ -162,7 +162,7 @@ body {
 
 .taskBox {
     width: 100%;
-    padding-top: 7vh;
+    padding-top:0vh;
     padding-bottom: 0vh;
     text-align: center;
     box-sizing: border-box;
