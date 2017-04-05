@@ -90,6 +90,7 @@ body {
     padding-top: 15vh;
     padding-bottom: 0vh;
     text-align: center;
+    font-family: 'Lato', sans-serif;
     font-size: 25vmin;
     font-weight: bold;
     background: rgba(0, 0, 0, 0);
@@ -100,6 +101,7 @@ body {
     text-align: center;
     padding: 12px 20px;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
     font-size: 4vmin;
     font-weight: normal;
     border: none;
@@ -119,6 +121,7 @@ body {
     margin-top: -4vmin;
     padding: 12px 20px;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
     font-size: 5vmin;
     font-weight: 500;
     outline: none;
