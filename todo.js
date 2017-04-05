@@ -9,13 +9,13 @@ function get_todos() {
 
 function add() {
     var task = document.getElementById('tdTask').value;
-if ($('#task').val() !== "") {
+if ($('#tdTask').val() !== "") {
     var todos = get_todos();
     todos.push(task);
     localStorage.setItem('todo', JSON.stringify(todos));
 
     show();
-    $('#task').val("");
+    $('#tdTask').val("");
 }
     return false;
 }
