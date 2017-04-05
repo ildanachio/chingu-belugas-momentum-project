@@ -45,9 +45,10 @@ function clock() {
 
 //Calculate the phase of the day
 function dayPhase(hour) {
+    console.log(hour);
     if (hour > 04 & hour <= 11) {
         return "morning"
-    } else if (hour => 12 & hour <= 16) {
+    } else if (hour >= 12 & hour <= 16) {
         return "afternoon"
     } else if (hour > 16 & hour <= 24) {
         return "evening"
