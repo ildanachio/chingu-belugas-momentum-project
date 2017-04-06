@@ -36,6 +36,10 @@ $('.todo').on('click', function(e) {
     }
 })
 
+$('.code').on('click', function(e) {
+    window.open('algo/index.html');
+});
+
 //hide popups from click anywhere on the body
 // $('.overlay').on('click',function(e){
 //     $('.Spopup').addClass("hidden");
