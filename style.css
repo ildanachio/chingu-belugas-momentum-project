@@ -297,3 +297,10 @@ button{
     }
 }
 
+.ghLink{
+    color:white;
+}
+
+.ghLink:hover{
+    color:white;
+}
