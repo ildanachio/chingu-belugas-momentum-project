@@ -226,7 +226,7 @@ input[type="text"]::-webkit-input-placeholder {
 .Spopup,
 .TDpopup {
     position: absolute;
-    width: 300px;
+    width: 250px;
     background: rgba(0, 0, 0, 0.5);
     font-size: 2.5vmin;
     color: white;
@@ -240,6 +240,7 @@ input[type="text"]::-webkit-input-placeholder {
 .bgBorder {
     cursor: pointer;
     text-decoration: underline;
+    padding-right: 20px;
 }
 
 #tdTask {
@@ -280,7 +281,13 @@ button{
 }*/
 
 /*styling names*/
+.ghLink{
+    color: white;
+}
 
+.ghLink:hover{
+    color:white;
+}
 
 
 /*Adding media-query*/
@@ -300,10 +307,3 @@ button{
     }
 }
 
-.ghLink{
-    color:white;
-}
-
-.ghLink:hover{
-    color:white;
-}
