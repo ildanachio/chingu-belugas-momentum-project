@@ -33,20 +33,21 @@
             <!-- text-editor icon goes here -->
             <div id="btnContainer" class="row">
                 <div class="col-xs-6 btnAnimation">
-                    <div class="col-xs-1 text-left pull-left btn btn-default cog">
-                        <a style = "color:white" href="#" data-toggle="tooltip" data-placement="bottom" title="Settings">
+                    <a style="color:white" href="#" data-toggle="tooltip" data-placement="bottom" title="Settings">
+                        <div class="col-xs-1 text-left pull-left btn btn-default cog">
                             <i id="cog" class="fa fa-cog fa-lg" aria-hidden="true"></i>
-                    </a></div>
-                    <div class="col-xs-1 text-left pull-left btn btn-default todo">
-                        <a style = "color:white" href="#" data-toggle="tooltip" data-placement="bottom" title="To-do">
+                        </div>
+                    </a>
+                    <a style="color:white" href="#" data-toggle="tooltip" data-placement="bottom" title="To-do">
+                        <div class="col-xs-1 text-left pull-left btn btn-default todo">
                             <i id="todo" class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="col-xs-1 text-left pull-left btn btn-default code">
-                        <a style = "color:white" href="#" data-toggle="tooltip" data-placement="bottom" title="Lets Code">
+                        </div>
+                    </a>
+                    <a style="color:white" href="#" data-toggle="tooltip" data-placement="bottom" title="Lets Code">
+                        <div class="col-xs-1 text-left pull-left btn btn-default code">
                             <i id="code" class="fa fa-code fa-lg" aria-hidden="true"></i>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
             <!-- search-bar goes here -->
@@ -125,11 +126,6 @@
                 <br>
                 <span>Cillianbc<a class="ghLink bgBorder pull-right" target="_blank" href="https://github.com/cillianbc"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></span>
                 <br>
-                <!-- <span><a class="ghLink bgBorder" target="_blank" href="https://github.com/Tan-Moy">Tan</a></span><br>
-                <span><a class="ghLink bgBorder" target="_blank" href='https://github.com/Arthurauthor'>Arthur</a></span><br>
-                <span><a class="ghLink bgBorder"  target='_blank' href = "https://github.com/pankaja-shree">Pankaja</a></span><br>
-                <span><a class="ghLink bgBorder" target="_blank" href="https://github.com/cillianbc">CillianBC</a></span><br>
- -->
             </div>
         </div>
         <!-- end settings popup -->
@@ -157,12 +153,13 @@
         <!-- end popups -->
     </div>
     <script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-    $('[data-toggle="tooltip"]').on('click',function(){
-        $('[data-toggle="tooltip"]').tooltip("hide")});
-});
-</script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="tooltip"]').on('click', function() {
+            $('[data-toggle="tooltip"]').tooltip("hide")
+        });
+    });
+    </script>
 </body>
 
 </html>
