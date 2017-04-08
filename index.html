@@ -33,10 +33,19 @@
             <!-- text-editor icon goes here -->
             <div id="btnContainer" class="row">
                 <div class="col-xs-6 btnAnimation">
-                    <div class="col-xs-1 text-left pull-left btn btn-default cog"><i id="cog" class="fa fa-cog fa-lg" aria-hidden="true"></i></div>
-                    <div class="col-xs-1 text-left pull-left btn btn-default todo"><i id="todo" class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i>
+                    <div class="col-xs-1 text-left pull-left btn btn-default cog">
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Settings">
+                            <i id="cog" class="fa fa-cog fa-lg" aria-hidden="true"></i>
+                    </a></div>
+                    <div class="col-xs-1 text-left pull-left btn btn-default todo">
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="To-do">
+                            <i id="todo" class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i>
+                        </a>
                     </div>
-                    <div class="col-xs-1 text-left pull-left btn btn-default code"><i id="code" class="fa fa-code fa-lg" aria-hidden="true"></i>
+                    <div class="col-xs-1 text-left pull-left btn btn-default code">
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Lets Code">
+                            <i id="code" class="fa fa-code fa-lg" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -136,6 +145,13 @@
         <script src="popups.js"></script>
         <!-- end popups -->
     </div>
+    <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+    $('[data-toggle="tooltip"]').on('click',function(){
+        $('[data-toggle="tooltip"]').tooltip("hide")});
+});
+</script>
 </body>
 
 </html>
