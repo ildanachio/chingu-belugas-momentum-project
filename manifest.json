@@ -25,11 +25,12 @@
             "https://code.jquery.com/jquery-3.1.1.min.js",
             "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
             "https://rawgit.com/jesstelford/a981e6877034231bd43b526a07b3a7b4/raw/js1-utilities.js",
+			"https://cdnjs.cloudflare.com/ajax/libs/showdown/1.0.0/showdown.min.js",
             "http://*/*", "https://*/*"
         ],
         "css": ["style.css"],
         "js": ["clock.js", "focus.js", "kata.js", "quotes.js", "todo.js", "weatherApp.js"]
     }],
 
-    "content_security_policy": "script-src 'self' https://use.fontawesome.com/9acb8c974f.js https://code.jquery.com/jquery-3.1.1.min.js https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js https://rawgit.com/jesstelford/a981e6877034231bd43b526a07b3a7b4/raw/js1-utilities.js; object-src 'self'"
+    "content_security_policy": "script-src 'self' https://use.fontawesome.com/9acb8c974f.js https://code.jquery.com/jquery-3.1.1.min.js https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js https://cdnjs.cloudflare.com/ajax/libs/showdown/1.0.0/showdown.min.js https://rawgit.com/jesstelford/a981e6877034231bd43b526a07b3a7b4/raw/js1-utilities.js; object-src 'self'"
 }
