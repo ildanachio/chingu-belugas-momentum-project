@@ -37,8 +37,12 @@ function getChallengeName(){
 $.getJSON(codeWarsUrl+returnName, function(data) {
     let kataList = data["description"];
   let authorList = data["createdBy"]["username"];  let authorUrl = data["createdBy"]["url"];
- 
-  $("#kataHolder").html(data["description"]);
+  //convert markdown to html
+ var converter = new showdown.Converter();
+ var text = data["description"];
+var htmlText = converter.makeHtml(text);
+//display
+  $("#kataHolder").html(htmlText);
   $("#kataHolder").addClass('text-justify');
  $("#kataAuthor").html(authorList);
   });         
