@@ -15,6 +15,7 @@
     "permissions": [
         
         "https://ajax.googleapis.com/",
+        "https://www.codewars.com/api/v1/code-challenges/",
         "geolocation",
         "storage"
     ],
