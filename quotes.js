@@ -23,7 +23,7 @@ function applyColor(elements){
     }
 }
 
-function getQuote(){    fetch("http://api.icndb.com/jokes/random")
+function getQuote(){    fetch("https://api.icndb.com/jokes/random")
     .then((response)=>{
       return response.json()
     }).then((callback)=>{
