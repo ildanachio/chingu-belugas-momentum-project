@@ -1,0 +1,79 @@
+<!-- start random quotes -->
+    <div>
+        <div class="contentArea">
+            <div class="textColorChange test">
+                <p class="jokeArea"></p>
+                <div class="buttons">
+                    <button onclick="getQuote()" class="backgroundColorChange" id="newJoke">Make me laugh</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- DOM Utility functions -->
+    <script src="https://rawgit.com/jesstelford/a981e6877034231bd43b526a07b3a7b4/raw/js1-utilities.js"></script>
+    <!-- Our code -->
+    <script src="quotes.js"></script>
+    <!-- END Random Quotes -->
+
+<!-- Start TODO list -->
+    <div id="myDIV" class="header">
+        <h2>To-Do</h2>
+        <input id="task" placeholder="Add your item">
+        <button id="add" class="addBtn">DO</button>
+        <hr>
+    </div>
+    <ul id="todos"></ul>
+    <script src="todo.js"></script>
+    <!-- END TODO list -->
+
+    <!-- Start Clock -->
+    <div id="box" class="container-fluid">
+        <div id="view" class=" ">23.19</div>
+        <div id="greets">
+            <input id="getName" type="text" class="hidden" placeholder="Hello, What is your name?">
+            <div id="showname" class="well well-sm hidden"></div>
+        </div>
+    </div>
+    <script src='clock.js'></script>
+    <!-- END Clock -->
+
+    <!-- Start algoChallenges -->
+    <div class="container-fluid">
+        <div id="kata-container">
+            <div class="text-center">
+                <h2 id="kataHolder"> Your Code Challenge Will Appear Here</h2>
+                <br>
+                <h3 id="kataAuthor"></h3>
+                <div class="centre">Select difficulty
+                    <levelgroup>
+                        <label>
+                            <input type="radio" name="level" id="easy"> Easy</label>
+                        <label>
+                            <input type="radio" name="level" id="medium"> Medium</label>
+                        <label>
+                            <input type="radio" name="level" id="hard"> Hard</label>
+                    </levelgroup>
+                    <button id="getKata" class="btn btn-primary btn-lg">
+                        Get Challenge
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="kata.js"></script>
+        <!-- END algoChallenges -->
+        <!-- START Focus of the Day -->
+        <div class="container dayTask-container text-center">
+            <div id="inputDiv">
+                <label for="dayTask"> What is your main focus for today? </label>
+                <br>
+                <input id="dayTask" type="text" placeholder="Enter your task here" />
+            </div>
+            <div id="taskDiv">
+                <span id="title"> TODAY</span>
+                <br>
+                <input type="checkbox" name="dayTask" class="css-checkbox" id="check" />
+                <span id="task"></span><i class="fa fa-times" aria-hidden="true" id="cross"></i><i class="fa fa-plus" aria-hidden="true" id="plus"></i>
+            </div>
+        </div>
+        <script src='focus.js'></script>
+        <!-- END Focus of the Day -->

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Algorithm Challenge</title>
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
+    <script src="https://use.fontawesome.com/9acb8c974f.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.0.0/showdown.min.js"></script>`
+</head>
+
+<body>
+    <div id='parentdiv' class="container-fluid">
+        <!-- Start Algorithm -->
+        <div class="jumbotron">
+            <h3 id="heading" class="text-center well well-sm">Algorithm Challenges <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal"><i class="fa fa-question fa-lg" aria-hidden="true"></i></button>
+</h3>
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">About Algorithm Challenges</h4>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li>Choose amongst the 3 levels of algorithm challenges - Easy, medium and hard</li>
+                                <li>Use the in-browser editor to solve the challenge in any language. </li>
+                                <li>To choose a language without signing in, go to help (in the footer of the editor embed), under the FAQ 'How do I start', click on 'select a language'.</li>
+                                <li>The Algorithm Challenges have been taken from <a target="_blank" href="https://dev.codewars.com/"> CodeWars API </a> </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="kata-container">
+                <div class="row text-center">
+                    <div id="kataHolder" class="text-center">
+                        Your Code Challenge Will Appear Here
+                    </div>
+                    <br>
+                    <h6 id="kataAuthor"></h6>
+                    <div class="centre">Select difficulty
+                        <levelgroup>
+                            <label>
+                                <input type="radio" name="level" id="easy" required> Easy</label>
+                            <label>
+                                <input type="radio" name="level" id="medium" required> Medium</label>
+                            <label>
+                                <input type="radio" name="level" id="hard" required> Hard</label>
+                        </levelgroup>
+                        <button id="getKata" class="btn btn-primary ">
+                            Get Challenge
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <iframe frameborder="0" width="100%" height="450px" src="https://repl.it/Dn6S"></iframe>
+        </div>
+    </div>
+    <script type="text/javascript" src="kata.js"></script>
+    <!-- End Algorithm -->
+</body>
+
+</html>

@@ -1,50 +1,303 @@
-
-.textColorChange{
+html,
+body {
+    height: 100%
 }
 
-.backgroundColorChange{
-}
-body{
-  font-size: 16px;
-}
-.test{
-  background-color: white !important ;
-}
-.jokeArea{
-	text-align:center;
-  border-radius: 2px;
-  font-size: 1.5em;
-  line-height: 1.2em;
-  padding: 3%;
-}
-.contentArea{
-  padding-top:15%;
-}
-.quote{
-  font-size: 3.5em;
-}
-.container-fluid{
-  height: 750px;
-}
-#newJoke{
-  font-size: 1.2em;
-  color: white;
-  border-radius: 8px;
-  float:right;
-  margin-right: 5%;
-  border: none;
-  padding: 1.2em;
-  margin-bottom: 1.2em;
+#body {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    background-size: cover;
+    /*overflow:hidden;*/
+    font-family: 'Quicksand', sans-serif;
+    background: url('https://source.unsplash.com/category/nature') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	-webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
 }
 
-.twitter-share-button{
-  float:left;
-  width:15%;
-  margin-left:5%;
-  padding-bottom:1%;
-  margin-bottom:1%
+.overlay {
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: fixed;
 }
-.buttons{
-  padding: .5%;
-  background-color: white;
+
+
+/*style header icons*/
+
+
+#btnAnimation{
+    -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+         -o-transition: all 1s ease;
+            transition: all 1s ease;
 }
+
+#btnContainer .btn-default {
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    border: 0 none;
+    border-radius: 0;
+    outline: 0 none;
+    font-size: 2.2vmin;
+}
+
+#btnContainer .btn-default:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    /*border-radius: 10%;*/
+    /*border: 1px solid gray;*/
+    transition: all 0.9s ease;
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+}
+
+/*#about:hover{
+    transform: rotate(20deg);
+    transition: all 0.5s ease;
+ }
+*/
+
+
+/*weather style*/
+
+.weatherFont {
+    font-size: 4vmin;
+    font-weight: normal;
+}
+
+.weatherFont#wCondition {
+    font-size: 3vmin;
+    text-transform: lowercase;
+}
+
+
+/*clock style*/
+
+#box {
+    width: 60%;
+}
+
+#viewBox {
+    padding-top: 20vh;
+    padding-bottom: 0vh;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 24vmin;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0);
+}
+
+#getName {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 4vmin;
+    font-weight: normal;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    background: rgba(0, 0, 0, 0);
+}
+
+#getName:focus::-webkit-input-placeholder{
+    color: transparent;
+    transition-duration: 0.5s;
+}
+
+#showname {
+    width: 100%;
+    text-align: center;
+    margin-top: -4vmin;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 5vmin;
+    font-weight: 500;
+    outline: none;
+    border: none;
+}
+
+
+/*Focus of the day style*/
+
+#label {
+    width: 100%;
+    text-align: center;
+    padding-top: 0vh;
+    padding-bottom: 0vh;
+    box-sizing: border-box;
+    font-size: 5vmin;
+    font-weight: 500;
+}
+
+#dayTask {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-size: 4vmin;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    background: rgba(0, 0, 0, 0);
+	transition: color 0.9s ease;
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+}
+
+#dayTask:focus::-webkit-input-placeholder{
+    color: transparent;
+    transition-duration: 0.5s;
+}
+
+.taskBox {
+    width: 100%;
+    padding-top:0vh;
+    padding-bottom: 0vh;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 4vmin;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+#task {
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+#cross,
+#plus {
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    padding: 10px;
+}
+
+/*Random Quotes*/
+
+.rquotes {
+    font-size: 1em;
+    font-weight: normal;
+    /* text-align: center; */
+    padding-top: 4vh;
+    /*position: fixed;*/
+    bottom: 0;
+}
+
+#newJoke {
+    cursor: pointer;
+	position: absolute;
+	left:0;
+	right:0;
+	bottom: 0;
+	text-align: center;
+    transition-property: display;
+    transition-duration: 0.5s;
+}
+
+
+/*styling the placeholders*/
+
+input[type="text"]::-webkit-input-placeholder {
+    color: #C5C3D0;
+}
+
+
+/*popup styles*/
+
+.Spopup,
+.TDpopup {
+    position: absolute;
+    width: 250px;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 2.5vmin;
+    color: white;
+    border: 1px solid white;
+    z-index: 10;
+    top: 5%;
+    left: 0;
+    padding: 2vmin;
+}
+
+.bgBorder {
+    cursor: pointer;
+    text-decoration: underline;
+    padding-right: 20px;
+}
+
+#tdTask {
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    background: rgba(0, 0, 0, 0);
+}
+
+button{
+    width: 100%;
+    padding-top: 1px;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0);
+}
+
+#todos{
+    padding:2vh;
+    text-align: left;
+    margin-left: -30px;
+}
+
+.remove{
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+/*styling names*/
+.ghLink{
+    color: white;
+}
+
+.ghLink:hover{
+    color:white;
+}
+
+
+/*Adding media-query*/
+
+@media screen and (max-width: 930px) {
+    #box {
+        width: 70%;
+    }
+    #viewBox {
+        padding-top: 8vh;
+    }
+    #label {
+        padding-top: 0vh;
+    }
+    .taskBox {
+        padding-top: 1vh;
+    }
+}
+

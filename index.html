@@ -1,42 +1,167 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>semrush API</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>WebTao</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/9acb8c974f.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<body>
-  <div class="container-fluid backgroundColorChange">
-  	<!-- <div class="row headerArea">
-  		<div class="col-xs-8 col-md-8 col-md-offset-2 col-xs-offset 2">
-        <div class = "heading"><h1>Random Chuck Norris Joke Machine</h1></div>
-  		</div>
-  	</div> -->
-  	<div class="row contentArea">
-  		<div class="textColorChange col-xs-8 col-md-8 col-md-offset-2 col-xs-offset 2 test">
-  			<p class = "jokeArea"></p>
-  			<div class="buttons">
-  			<img src="http://res.cloudinary.com/dx2najekz/image/upload/v1486125449/twitter_vvpuy2.png" class="backgroundColorChange img-responsive twitter-share-button" </a>
-  			<button onclick="getQuote()" class="backgroundColorChange" id="newJoke">Make me laugh</button>
-  			</div>
-  		</div>
-  	</div>
-  </div>
-  <!-- DOM Utility functions -->
-  <script src="https://rawgit.com/jesstelford/a981e6877034231bd43b526a07b3a7b4/raw/js1-utilities.js"></script>
-  <!-- Our code -->
-  <script src="main.js"></script>
 
+<body id="body">
+    <div class="container-fluid overlay">
+        <!-- container start -->
+        <!-- Header start -->
+        <div id='topHeader' class="row">
+            <!-- topheader should contain icons for text editor, weather and most used link list -->
+            <!-- Start WeatherApp  -->
+            <div id="styleThis" class="col-xs-4 text-right pull-right">
+                <span id='weather' class="weatherFont">loading</span>
+                <span id='wCondition' class="weatherFont"></span>
+            </div>
+            <script src="./weatherApp.js"></script>
+            <!-- END WeatherApp -->
+            <!-- text-editor icon goes here -->
+            <div id="btnContainer" class="row">
+                <div class="col-xs-6 btnAnimation">
+                        <div class="col-xs-1 text-left btn btn-default cog">
+                            <a style="color:white" href="#" data-toggle="tooltip" data-placement="bottom" title="Settings">
+                            <i id="cog" class="fa fa-cog fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    
+                        <div class="col-xs-1 text-left pull-left btn btn-default todo">
+                            <a style="color:white" href="#" data-toggle="tooltip" data-placement="bottom" title="To-do">
+                            <i id="todo" class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-1 text-left pull-left btn btn-default code">
+                            <a style="color:white" href="#" data-toggle="tooltip" data-placement="bottom" title="Lets Code">
+                            <i id="code" class="fa fa-code fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                </div>
+            </div>
+            <!-- search-bar goes here -->
+            <!-- most used linked list goes here -->
+            <!-- end top header -->
+        </div>
+        <!-- Header end -->
+        <div id="box" class="container-fluid">
+            <!-- Start Clock -->
+            <div id="viewBox" class="jumbotron">
+                <span id="view"></span>
+                <div id="showname">
+                    <input id="getName" type="text" class="hidden" placeholder="enter your name">
+                </div>
+            </div>
+            <script src='clock.js'></script>
+            <!-- END Clock -->
+            <!-- START Focus of the Day -->
+            <div class="dayTaskContainer">
+                <div id="inputDiv">
+                    <div id="label">What is your main focus for today?</div>
+                    <input id="dayTask" type="text" placeholder="enter your task here" />
+                </div>
+                <div class="taskBox">
+                    <div id="taskDiv">
+                        <span id="title"> TODAY</span>
+                        <br>
+                        <input type="checkbox" name="dayTask" class="css-checkbox" id="check" />
+                        <span id="task"></span><i class="fa fa-times" aria-hidden="true" id="cross"></i><i class="fa fa-plus" aria-hidden="true" id="plus"></i>
+                    </div>
+                </div>
+            </div>
+            <script src='focus.js'></script>
+            <!-- END Focus of the Day -->
+            <!-- Start random quotes -->
+            <div class='rquotes' id="randomQuotes">
+                <div class="contentArea">
+                    <div class="textColorChange test">
+                        <p id="newJoke" class="jokeArea">
+                            "Chuck Norris' programs never exit, they terminate.
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- DOM Utility functions -->
+            <script src="https://rawgit.com/jesstelford/a981e6877034231bd43b526a07b3a7b4/raw/js1-utilities.js"></script>
+            <!-- Our code -->
+            <script src="quotes.js"></script>
+            <!-- END Random Quotes -->
+            <!-- end of container -->
+        </div>
+        <!-- Popups -->
+        <!-- settings popup -->
+        <div class="Spopup hidden animated fadeIn">
+            <div id="settingsPopup">
+                <span><b>Weather Unit: </b></span>
+                <span class="bgBorder" id="toggleWeather">toggle</span>
+                <br>
+                <span><b>User Settings: </b></span>
+                <span class="bgBorder" id="resetSettings">reset</span>
+                <br>
+                <br>
+                <span id="instructions"><b>Note: </b>Click on the extension icon to open up a fiddle</span>
+                <br>
+                <br>
+                <span> <strong>Extension Created By:</strong></span>
+                <br>
+                <span>Tan
+                <a class="ghLink bgBorder pull-right" target="_blank" href="https://github.com/Tan-Moy">
+                <i class="fa fa-github fa-lg" aria-hidden="true"></i></a></span>
+                <br>
+                <span>Arthur<a class="ghLink bgBorder pull-right" target="_blank" href="https://github.com/Arthurauthor"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></span>
+                <br>
+                <span>Pankaja<a class="ghLink bgBorder pull-right" target="_blank" href="https://github.com/pankaja-shree"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></span>
+                <br>
+                <span>Cillianbc<a class="ghLink bgBorder pull-right" target="_blank" href="https://github.com/cillianbc"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></span>
+                <br>
+            </div>
+        </div>
+        <!-- end settings popup -->
+        <!-- start to-do popup -->
+        <div class="TDpopup hidden animated fadeIn">
+            <p> Do or Do not </p>
+            <div class="row">
+                <div class="col-xs-8">
+                    <div id="myDIV" class="header">
+                        <input id="tdTask" placeholder="Add your item">
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <button id="add" class="addBtn">add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul id="todos"></ul>
+                </div>
+            </div>
+            <script src="todo.js"></script>
+        </div>
+        <script src="popups.js"></script>
+        <!-- end popups -->
+    </div>
+    <script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="tooltip"]').on('click', function() {
+            $('[data-toggle="tooltip"]').tooltip("hide")
+        });
+    });
+    </script>
 </body>
+
 </html>
